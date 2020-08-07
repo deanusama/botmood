@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <script src="https://kit.fontawesome.com/bd33e4cb7c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/Css/sign-up/signup.css?{% now "U" %}">
+    <link rel="stylesheet" href="/static/Css/General/Grid.css?{% now "U" %}">
+    <link rel="stylesheet" href="/static/Css/General/general.css?{% now "U" %}">
+          <link rel="stylesheet" href="/static/Queries/general/general.css?{% now "U" %}">
+    <link rel="stylesheet" href="/static/Queries/sign-up/signup.css?{% now "U" %}">
+</head>
+
+<body>
+ <!-- Navbar Starts Here -->
+
+    <!-- Section Starts Here -->
+            <section class="main-section">
+                <img src="{% static '/Images/Login/an-abstract-design-2881261.jpg' %}" alt="">
+                <div class="container main-section-container">
+                    <div class="row">
+                        <div class="col span-5-of-12 text-column">
+                            <div class="back-link-div">
+                                <h2>
+                                    <a href="#" class="back-link">Back</a>
+                                </h2>
+                            </div>
+
+                            <div class="heading-div">
+                                <h1 class="heading">Sign Up Here</h1>
+                            </div>
+
+                            <div class="paragraph-div">
+                                <p class="paragraph">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum laboriosam adipisci assumenda. Modi, assumenda iusto aliquam esse facere nobis voluptate exercitationem, harum, quis tenetur cum.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col span-7-of-12 form-column">
+                            <div class="login">
+                                <div class="login-heading">
+                                    <h1>
+                                        Sign Up
+                                    </h1>
+                                </div>
+
+                                <div class="form-div">
+                                    <form action="{% url 'signup' %}" method="POST">
+                                    {% csrf_token %}
+
+                                    <div class="form-group">
+                                            <label for="Name">UserName</label>
+                                            {{form.username}}
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email">Email</label>
+                                            {{form.email}}
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="Phone">Phone Number</label>
+                                            {{form.phone}}
+
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="password">Password</label>
+                                            {{form.password1}}
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="password1">Confirm Password</label>
+                                            {{form.password2}}
+                                        </div>
+                                        
+                                        
+
+                                        <div class="links-group">
+                                            <button type="submit" class="form-btn">
+                                                Sign Up
+                                            </button>
+                                            <a href="{% url 'login' %}" class="forget-link">Already Have an Account?</a>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    <!-- Section Ends Here -->
+
+
+
+    <script src="{% static '/js/navbar.js' %}"></script>
+
+</body>
+
+</html>

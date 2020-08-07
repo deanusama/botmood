@@ -1,0 +1,40 @@
+@media only screen and(max-width: 1400px){
+    .container{
+        width: 100%;
+        padding: 0 2%;
+    }
+}
+
+@media only screen and(max-width: 1000px){
+    .bgc-img{
+        display: none !important; 
+    }
+    .text-column{
+        display: none;
+    }
+
+    .form-column{
+        width: 100%;
+        .payment{
+            margin-left: 0 !important;
+        }
+    }
+}
+
+@media only screen and(max-width: 600px){
+    .form-div{
+        form{
+            .form-group{
+                flex-direction: column;
+                align-items: end !important;
+                div{
+                    width: 100% !important;
+                    margin-right: 0 !important;
+                }
+                input{
+                    margin-bottom: 1.8rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,339 @@
+/*********** Variables *************/
+// Color Variables
+$link-color: black;
+
+
+
+
+
+/*********** Universal Styling *************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*********** Basic Styling *************/
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1410px;
+}
+
+@font-face {
+    font-family: "ProximaNova";
+    src: url(../Fonts/ProximaNova-Extrabold.otf);
+    font-style: normal;
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "ProximaNova";
+    src: url(../Fonts/ProximaNova-Bold.otf);
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "ProximaNova";
+    src: url(../Fonts/ProximaNova-Regular.otf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+/*********** Main Section *************/
+
+.header-section {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../Images/Blog-List/2-women.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 3.5rem 0;
+
+    .back-link-div {
+        margin-bottom: 2.3rem;
+
+        .back-link {
+            font-family: ProximaNova;
+            font-weight: 700;
+            font-size: 2rem;
+            color: white;
+        }
+    }
+
+    .header-heading-div {
+        margin-bottom: 2.3rem;
+
+        .header-heading {
+            font-family: ProximaNova;
+            font-weight: 900;
+            font-size: 3.75rem;
+            color: white;
+        }
+    }
+
+    .header-para-div {
+        width: 77.50%;
+
+        .header-para {
+            font-family: ProximaNova;
+            font-weight: 400;
+            font-size: 1.125rem;
+            line-height: 1.5rem;
+            color: white;
+        }
+    }
+}
+
+.blog-hero-section {
+    padding-top: 10rem;
+
+    .blog-hero-container {
+        .date-and-category {
+            max-width: 18.45rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 2.375rem;
+
+            .category-link {
+                padding: 0.8rem 2.6rem;
+                background-image: linear-gradient(to top, #fd867b, #b7335f);
+                border-radius: 10px;
+                color: white;
+                font-family: ProximaNova;
+                font-weight: 700;
+            }
+
+            .date {
+                color: #999999;
+                font-family: ProximaNova;
+                font-weight: 900;
+            }
+        }
+
+        .main-heading-div {
+            margin-bottom: 3.43rem;
+
+            .main-heading {
+                max-width: 65%;
+                // min-width: 55.25rem;
+                font-size: 3rem;
+                line-height: 4rem;
+                font-family: ProximaNova;
+                font-weight: 900;
+            }
+        }
+
+        .share-links-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2.06rem;
+
+            .share-text {
+                margin-right: 3rem;
+
+                p {
+                    font-size: 1.125rem;
+                    font-family: ProximaNova;
+                    font-weight: 900;
+                }
+            }
+
+            .share-icons {
+                a {
+                    color: #171426;
+                }
+
+                .fab {
+                    margin-right: 2rem;
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        img {
+            width: 100%;
+            margin-bottom: 2.93rem;
+        }
+    }
+}
+
+.blog-section {
+    padding-bottom: 11.5rem;
+
+    &-container {
+        .row {
+            .text-side {
+                margin-top: 0;
+                padding-right: 2rem;
+
+                .text-side-div {
+                    .hero-blog-detail {
+                        font-size: 1.125rem;
+                        line-height: 2.5rem;
+                        font-family: ProximaNova;
+                        font-weight: 400;
+                        word-spacing: 0.2rem;
+                        margin-bottom: 5.5rem;
+                    }
+
+                    .new-blog {
+                        .new-blog-img {
+                            margin-bottom: 4.31rem;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+
+                        .new-blog-title {
+                            .blog-title {
+                                font-size: 2.2rem;
+                                line-height: 2.5rem;
+                                font-family: ProximaNova;
+                                font-weight: 700;
+                                word-spacing: 0.2rem;
+                                margin-bottom: 2.75rem;
+                            }
+                        }
+
+                        .new-blog-text {
+                            .text {
+                                font-size: 1.125rem;
+                                line-height: 2.5rem;
+                                font-family: ProximaNova;
+                                font-weight: 400;
+                                word-spacing: 0.2rem;
+                                margin-bottom: 5.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .featured-side {
+                .featured-side-container {
+                    max-width: 23rem;
+                    margin-left: auto;
+
+                    .search-div {
+                        margin-bottom: 2.93rem;
+                        input {
+                            outline: none;
+                            height: 3.125rem;
+                            width: 100%;
+                            border-radius: 10px;
+                            padding-left: 1.56rem;
+                            border: 1px solid #e1e1e1;
+                            font-size: 1.125rem;
+                            font-family: ProximaNova;
+                            font-weight: 700;
+                        }
+                    }
+
+                    .featured-heading-div{
+                        margin-bottom: 3.375rem;
+                        .featured-heading{
+                        font-size: 3rem;
+                        font-family: ProximaNova;
+                        font-weight: 700; 
+                        }
+                    }
+
+                    .article{
+                        margin-bottom: 3.5rem;
+                        display: flex;
+                        align-items: center;
+                        .article-img{
+                            margin-right: 0.875rem;
+                            img{
+                                width:8.43rem;
+                            }
+                        }
+
+                        .article-about{
+                            .article-title-div{
+                                margin-bottom: 0.6rem;
+                                .article-title{
+                                    font-size: 1rem;
+                        font-family: ProximaNova;
+                        font-weight: 700; 
+                        color: #999999;
+                                }
+                            }
+
+                            .article-date-div{
+                                margin-bottom: 0.5rem;
+                                .article-date{
+                                    font-size: 1rem;
+                        font-family: ProximaNova;
+                        font-weight: 400;
+                        color: #999999; 
+                                }
+                            }
+                        }
+                    }
+
+                    .top-courses{
+                        margin-top: 6.06rem;
+                        &-heading-div{
+                            margin-bottom: 2.81rem;
+                            .top-courses-heading{
+                                font-size: 3rem;
+                                font-family: ProximaNova;
+                                font-weight: 700; 
+                            }
+                        }
+                        
+                        
+                        .top-course{
+                            margin-bottom: 3.43rem;
+                            .top-course-img{
+                                margin-bottom: 1.62rem;
+                                img{
+                                    width: 100%;
+                                    display: block;
+                                }
+                            }
+
+                            .top-course-heading-div{
+                                margin-bottom: 1rem;
+                                padding:0 1rem ;
+                                .top-course-heading{
+                                    font-size: 1.125rem;
+                    font-family: ProximaNova;
+                    font-weight: 700; 
+                    color: #171426;
+                    line-height: 2rem;
+                                }
+                            }
+
+                            .top-course-text-div{
+                                padding:0 1rem ;
+
+                                .top-course-text{
+                                    font-size: 1.125rem;
+                                    line-height: 1.5rem;
+                    font-family: ProximaNova;
+                    font-weight: 400;
+                    color: #999999; 
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

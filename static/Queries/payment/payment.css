@@ -1,0 +1,41 @@
+@media only screen and (max-width: 1400px) {
+  .container {
+    width: 100%;
+    padding: 0 2%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .bgc-img {
+    display: none !important;
+  }
+  .text-column {
+    display: none;
+  }
+  .form-column {
+    width: 100%;
+  }
+  .form-column .payment {
+    margin-left: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .form-div form .form-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end !important;
+        -ms-flex-align: end !important;
+            align-items: end !important;
+  }
+  .form-div form .form-group div {
+    width: 100% !important;
+    margin-right: 0 !important;
+  }
+  .form-div form .form-group input {
+    margin-bottom: 1.8rem;
+  }
+}
+/*# sourceMappingURL=payment.css.map */

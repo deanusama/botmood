@@ -1,0 +1,42 @@
+{% include 'important/base.html' %}
+{% block content %}
+{% load static %}
+{% load hitcount_tags %}
+
+
+
+your search = {{query}}
+
+total results = {{post_count}}
+
+    <section class="popular-section">
+        <div class="row popular-section-row">
+            <div class="container popular-section-container">
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+  <!-- Footer Starts Here -->
+    <footer class="page-footer">
+        <div class="container page-footer__container">
+            <div class="copyright-text-div">
+                <strong class="copyright-text">
+                    &copy;2016-2020 TutorialPoints Company
+                </strong>
+            </div>
+            <div class="footer-links-div">
+                <ul class="footer-list">
+                    <li class="footer-item"><a href="#" class="footer-link">Facebook .</a></li>
+                    <li class="footer-item"><a href="#" class="footer-link">Twitter .</a></li>
+                    <li class="footer-item"><a href="#" class="footer-link">Linkdin</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Ends Here -->
+
+{% endblock content%}

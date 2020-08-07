@@ -1,0 +1,164 @@
+@media only screen and (max-width: 1400px) {
+  .container {
+    width: 100%;
+    padding: 0 2%;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .favorite-course-row {
+    -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+            justify-content: end !important;
+  }
+  .favorite-course-row .course-container {
+    margin-right: 2%;
+    width: 30% !important;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    max-width: 500px;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  .ball-image {
+    display: none !important;
+  }
+  .form-container form .form-group {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .form-container form .form-group .first-name {
+    margin-bottom: 1.8rem;
+  }
+  .form-container form .edit-password {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .form-container form .edit-password strong {
+    margin-top: 1.8rem;
+  }
+  .color-column {
+    display: none;
+  }
+  .other-courses-column {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .edit-profile-div {
+    width: 100%;
+  }
+  .edit-profile-div .heading-and-img {
+    margin-bottom: 3.81rem;
+    padding: 0  !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .edit-profile-div .heading-and-img .edit-profile-heading {
+    margin-bottom: 1.8rem;
+    font-family: ProximaNova;
+    font-weight: 900;
+    font-size: 3.75rem;
+    margin-right: 0 !important;
+  }
+  .page-footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .page-footer .copyright-text {
+    -ms-flex-wrap: 1;
+        flex-wrap: 1;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 700;
+  }
+  .page-footer .footer-list-redesign {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .page-footer .footer-list-redesign .footer-item {
+    list-style: none;
+    margin-right: 1rem;
+  }
+  .page-footer .footer-list-redesign .footer-item:last-of-type {
+    margin-right: 0;
+  }
+  .page-footer .footer-list-redesign .footer-item .footer-link {
+    font-size: 1rem;
+    color: white;
+    font-weight: 700;
+  }
+  .form-container .btn-div {
+    width: 100% !important;
+  }
+  .form-container .btn-div .submit-btn {
+    width: 100% !important;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 80%;
+  }
+  .navbar-header-redesign {
+    height: 8.25rem;
+    border-bottom: 1px solid #e1e1e1;
+    padding: 2%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar-header-redesign .hero-text a {
+    font-family: ProximaNova;
+    color: black;
+    font-weight: 900;
+    font-size: 2rem;
+  }
+  .navbar-header-redesign img {
+    height: 3.3rem;
+    width: 3.3rem;
+    border-radius: 50%;
+  }
+  .edit-profile-div .form-container .form-group .input-div {
+    width: 95% !important;
+  }
+  .edit-profile-div .form-container .form-group .input-div input {
+    margin-left: 0 !important;
+    min-width: 320px;
+  }
+  .edit-profile-div .form-container form .form-group-hidden {
+    max-width: 320px !important;
+  }
+}
+/*# sourceMappingURL=profile.css.map */

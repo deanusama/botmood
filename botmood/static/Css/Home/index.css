@@ -1,0 +1,238 @@
+/*********** Variables *************/
+/*********** Universal Styling *************/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*********** Basic Styling *************/
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1410px;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url(../Fonts/ProximaNova-Extrabold.otf);
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url(../Fonts/ProximaNova-Bold.otf);
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url(../Fonts/ProximaNova-Regular.otf);
+  font-style: normal;
+  font-weight: 400;
+}
+
+/*********** Main Section *************/
+.main-header {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../../Images/Home/three-persons-sitting-on-the-stairs-talking-with-each-other-1438072.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../Images/Home/three-persons-sitting-on-the-stairs-talking-with-each-other-1438072.jpg);
+  width: 100%;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-header .main-header-heading a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-header .main-header-heading a .header-heading {
+  font-size: 4rem;
+  font-family: ProximaNova;
+  font-weight: 900;
+  color: white;
+}
+
+.main-header .main-header-heading a .header-color-div {
+  display: inline-block;
+  background-color: #1ae080;
+  color: white;
+  padding: 1rem;
+}
+
+.main-header .main-header-heading a .header-color-div .color-div-text {
+  font-family: ProximaNova;
+  font-weight: 300;
+}
+
+.below-header-nav-section {
+  background-color: #1B3467;
+  padding: 2rem;
+  margin-bottom: 5rem;
+}
+
+.below-header-nav-section .below-header-nav-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.below-header-nav-section .below-header-nav-div .below-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.below-header-nav-section .below-header-nav-div .below-header .below-header-div {
+  margin-right: 2rem;
+}
+
+.below-header-nav-section .below-header-nav-div .below-header .below-header-div a {
+  color: white;
+  font-family: ProximaNova;
+  text-decoration: none;
+}
+
+.below-header-nav-section .below-header-nav-div .below-header-follow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.below-header-nav-section .below-header-nav-div .below-header-follow .follow-icon {
+  margin-left: 1.5rem;
+}
+
+.below-header-nav-section .below-header-nav-div .below-header-follow .follow-icon a {
+  font-family: ProximaNova;
+  color: white;
+}
+
+.latest-div {
+  margin-bottom: 5rem;
+}
+
+.latest-div .container {
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 1.5rem;
+}
+
+.latest-div .container .latest {
+  font-family: ProximaNova;
+  font-weight: 700;
+}
+
+.home-courses-section {
+  margin-bottom: 5rem;
+}
+
+.home-courses-section .courses-section-container .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home-courses-section .courses-section-container .flex-container .flex-item {
+  max-width: 32%;
+  min-width: 340px !important;
+  margin-bottom: 5rem;
+}
+
+.home-courses-section .courses-section-container .flex-container .flex-item:nth-of-type(2n) {
+  margin-left: 2.5rem;
+}
+
+.home-courses-section .courses-section-container .flex-container .flex-item .flex-item-container {
+  font-family: ProximaNova;
+  padding: 0 2rem;
+}
+
+.home-courses-section .courses-section-container .flex-container .flex-item .flex-item-container a {
+  text-decoration: none;
+  display: block;
+  font-family: ProximaNova;
+}
+
+.home-courses-section .courses-section-container .flex-container .flex-item .flex-item-container .course-img img {
+  width: 100%;
+}
+
+.home-courses-section .courses-section-container .flex-container .flex-item .flex-item-container .course-title-div {
+  margin: 1rem 0;
+}
+
+.home-courses-section .courses-section-container .flex-container .flex-item .flex-item-container .course-title-div .course-title {
+  font-size: 1.875rem;
+  color: #000000D6;
+}
+
+.home-courses-section .courses-section-container .flex-container .flex-item .flex-item-container .course-date-div {
+  margin-bottom: 1rem;
+}
+
+.home-courses-section .courses-section-container .flex-container .flex-item .flex-item-container .course-date-div .course-date {
+  color: #999999;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.home-courses-section .courses-section-container .flex-container .flex-item .flex-item-container .course-info-div .course-info {
+  font-weight: 300;
+  font-size: 1.05rem;
+  line-height: 1.8rem;
+  color: rgba(0, 0, 0, 0.54);
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,207 @@
+/*********** Variables *************/
+// Color Variables
+$link-color: black;
+
+
+
+
+
+/*********** Universal Styling *************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*********** Basic Styling *************/
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1410px;
+}
+
+@font-face {
+    font-family: "ProximaNova";
+    src: url(../Fonts/ProximaNova-Extrabold.otf);
+    font-style: normal;
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "ProximaNova";
+    src: url(../Fonts/ProximaNova-Bold.otf);
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "ProximaNova";
+    src: url(../Fonts/ProximaNova-Regular.otf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+/*********** Main Section *************/
+
+.main-header {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../Images/Home/three-persons-sitting-on-the-stairs-talking-with-each-other-1438072.jpg);
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .main-header-heading{
+        a{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .header-heading{
+                font-size: 4rem;
+                font-family: ProximaNova;
+                font-weight: 900;
+                color: white;
+            }
+            
+            .header-color-div{
+                display: inline-block;
+                background-color: #1ae080;
+                color: white;
+                padding: 1rem;
+                .color-div-text{
+                    font-family: ProximaNova;
+                    font-weight: 300;
+                }
+            }
+        
+        }
+    }
+
+}
+
+.below-header-nav-section{
+    background-color: #1B3467;
+    padding: 2rem;
+    margin-bottom: 5rem;
+    .below-header-nav-div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        .below-header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .below-header-div{
+                a{
+                    color: white;
+                    font-family: ProximaNova;
+                    text-decoration: none;
+                }
+                margin-right: 2rem;
+            }
+        }
+
+        .below-header-follow{
+            display: flex;
+            align-items: center;
+            .follow-icon{
+                margin-left: 1.5rem;
+                a{
+
+                    font-family: ProximaNova;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+.latest-div{
+    margin-bottom: 5rem;
+    .container{
+        border-bottom: 1px solid #d9d9d9;
+        padding-bottom: 1.5rem;
+        .latest{
+            font-family: ProximaNova;
+            font-weight: 700;
+
+        }
+    }
+}
+
+.home-courses-section{
+    margin-bottom: 5rem;
+
+    .courses-section-container{
+        .flex-container{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            .flex-item{
+                max-width: 32%;
+                min-width: 340px !important;
+                margin-bottom: 5rem;
+                &:nth-of-type(2n){
+                    margin-left: 2.5rem;
+                }
+                .flex-item-container{
+                    font-family: ProximaNova;
+                    padding: 0 2rem;
+                    a{
+                        text-decoration: none;
+                        display: block;
+                        font-family: ProximaNova;
+                    }
+                    .course-img{
+                        img{
+                            width: 100%;
+                        }
+                    }
+
+                    .course-title-div{
+                        margin: 1rem 0;
+                        .course-title{
+                            font-size: 1.875rem;
+                            color: #000000D6;
+                        }
+                    }
+
+                    .course-date-div{
+                        margin-bottom: 1rem;
+                        .course-date{
+                            color: #999999;
+                            font-weight: 700;
+                            font-size: 1.05rem;
+                        }
+                    }
+
+                    .course-info-div{
+                        .course-info{
+                            font-weight: 300;
+                            font-size: 1.05rem;
+                            line-height: 1.8rem;
+                            color: rgba(0,0,0,.54);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+

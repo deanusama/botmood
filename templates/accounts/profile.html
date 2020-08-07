@@ -1,0 +1,305 @@
+{% include 'base.html' %}
+{% block content %}
+{% load static %}
+
+    <!-- Section Starts Here -->
+    <div class="container">
+
+    </div>
+
+    <div class="edit-profile">
+        <img src="../Images/profile/2.png" alt="" class="ball-image">
+        <div class="container">
+            <div class="edit-profile-div">
+                <div class="heading-and-img">
+                    <h1 class="edit-profile-heading">
+                        Edit Profile
+                    </h1>
+                    <img src="../Images/Icons/arrow.png" alt="" class="arrow">
+                </div>
+
+                <div class="form-container">
+
+
+
+
+                    <form action="{% url 'profile' %}" method="POST">
+                        
+                                {% csrf_token %}
+                                        
+                                            {{form.as_p}}
+                                            
+                     
+                        <div class="btn-div">
+                            <button type="submit" class="submit-btn">
+                                Save Changes
+                            </button>
+                        </div>
+                    </form>
+
+<a href="{% url 'password' %}">edit password</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="my-course-section">
+        <div class="my-course-section-container container">
+            <div class="my-course-section-heading-div">
+                <h1 class="my-course-section-heading">
+                    MY COURSE
+                </h1>
+            </div>
+            <div class="row my-course-section-row">
+                <div class="col span-2-of-5 color-column">
+                    <div class="color-column-container">
+                        <div class="col-heading-div">
+                            <h2 class="col-heading">
+                                Your Course
+                            </h2>
+                        </div>
+                        <div class="col-text-div">
+                            <p class="col-text">
+                                Preparation To learn Data Analysis By Understanding how and Why it Used
+                            </p>
+                        </div>
+                        <div class="col-arrow-div">
+                            <img src="../Images/Icons/arrow-left.png" alt="" class="arrow-left">
+                            <img src="../Images/Icons/arrow-right.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col span-3-of-5 other-courses-column">
+                    <div class="row other-courses-row">
+
+                        <div class="col span-1-of-3 course-column">
+                            <div class="course-container">
+                                <a href="#">
+                                    <div class="course-img-div">
+                                        <img src="../Images/profile/1.jpg" alt="">
+                                    </div>
+
+                                    <div class="course-title-div">
+                                        <h2 class="course-title">
+                                            Contain Demo
+                                        </h2>
+                                    </div>
+
+                                    <div class="course-text-div">
+                                        <p class="course-text">
+                                            Preparation To learn Data Analysis By Understanding how and Why it Used
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col span-1-of-3 course-column">
+                            <div class="course-container">
+                                <a href="#">
+                                    <div class="course-img-div">
+                                        <img src="../Images/profile/2.jpg" alt="">
+                                    </div>
+
+                                    <div class="course-title-div">
+                                        <h2 class="course-title">
+                                            Contain Demo
+                                        </h2>
+                                    </div>
+
+                                    <div class="course-text-div">
+                                        <p class="course-text">
+                                            Preparation To learn Data Analysis By Understanding how and Why it Used
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col span-1-of-3 course-column">
+                            <div class="course-container">
+                                <a href="#">
+                                    <div class="course-img-div">
+                                        <img src="../Images/profile/5.jpg" alt="">
+                                    </div>
+
+                                    <div class="course-title-div">
+                                        <h2 class="course-title">
+                                            Contain Demo
+                                        </h2>
+                                    </div>
+
+                                    <div class="course-text-div">
+                                        <p class="course-text">
+                                            Preparation To learn Data Analysis By Understanding how and Why it Used
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="favorite-courses">
+        <div class="favorite-course-container container">
+            <div class="favorite-course-heading-div">
+                <h1 class="favorite-course-heading">
+                    MY FAVORITE
+                </h1>
+            </div>
+            <div class="row favorite-course-row">
+
+
+                <div class="course-container">
+                    <a href="#">
+                        <div class="course-card">
+                            <div class="course-card-img">
+                                <img src="../Images/profile/1.jpg" alt="">
+                            </div>
+
+                            <div class="course-card-head-div">
+                                <strong class="course-card-head">
+                                    Containe Demo
+                                </strong>
+                            </div>
+
+                            <div class="course-card-info-div">
+                                <p class="course-card-info">
+                                    Preparation To learn Data Analysis By Understanding how and Why it Used
+                                </p>
+                            </div>
+
+                            <div class="course-card-icon-div">
+                                <i class="fas fa-heart"></i>
+                                <strong class="icon-text">
+                                    Liked
+                                </strong>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="course-container">
+                    <a href="#">
+                        <div class="course-card">
+                            <div class="course-card-img">
+                                <img src="../Images/profile/1.jpg" alt="">
+                            </div>
+
+                            <div class="course-card-head-div">
+                                <strong class="course-card-head">
+                                    Containe Demo
+                                </strong>
+                            </div>
+
+                            <div class="course-card-info-div">
+                                <p class="course-card-info">
+                                    Preparation To learn Data Analysis By Understanding how and Why it Used
+                                </p>
+                            </div>
+
+                            <div class="course-card-icon-div">
+                                <i class="fas fa-heart"></i>
+                                <strong class="icon-text">
+                                    Liked
+                                </strong>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="course-container">
+                    <a href="#">
+                        <div class="course-card">
+                            <div class="course-card-img">
+                                <img src="../Images/profile/1.jpg" alt="">
+                            </div>
+
+                            <div class="course-card-head-div">
+                                <strong class="course-card-head">
+                                    Containe Demo
+                                </strong>
+                            </div>
+
+                            <div class="course-card-info-div">
+                                <p class="course-card-info">
+                                    Preparation To learn Data Analysis By Understanding how and Why it Used
+                                </p>
+                            </div>
+
+                            <div class="course-card-icon-div">
+                                <i class="fas fa-heart"></i>
+                                <strong class="icon-text">
+                                    Liked
+                                </strong>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="course-container last-container">
+                    <a href="#">
+                        <div class="course-card">
+                            <div class="course-card-img">
+                                <img src="../Images/profile/1.jpg" alt="">
+                            </div>
+
+                            <div class="course-card-head-div">
+                                <strong class="course-card-head">
+                                    Containe Demo
+                                </strong>
+                            </div>
+
+                            <div class="course-card-info-div">
+                                <p class="course-card-info">
+                                    Preparation To learn Data Analysis By Understanding how and Why it Used
+                                </p>
+                            </div>
+
+                            <div class="course-card-icon-div">
+                                <i class="fas fa-heart"></i>
+                                <strong class="icon-text">
+                                    Liked
+                                </strong>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+
+
+            </div>
+        </div>
+    </section>
+    <!-- Section Ends Here -->
+
+
+
+    <!-- Footer Starts Here -->
+    <footer class="page-footer">
+        <div class="container page-footer__container">
+            <div class="copyright-text-div">
+                <strong class="copyright-text">
+                    &copy;2016-2020 TutorialPoints Company
+                </strong>
+            </div>
+            <div class="footer-links-div">
+                <ul class="footer-list">
+                    <li class="footer-item"><a href="#" class="footer-link">Facebook .</a></li>
+                    <li class="footer-item"><a href="#" class="footer-link">Twitter .</a></li>
+                    <li class="footer-item"><a href="#" class="footer-link">Linkdin</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Ends Here -->
+
+    <script src="{% static '/js/profile.js' %}"></script>
+
+{% endblock content %}

@@ -1,0 +1,147 @@
+@media only screen and(max-width: 1300px){
+    .container{
+        width: 100%;
+        padding: 0 2%;
+    }
+}
+
+@media only screen and(max-width: 1100px){
+    .instructor-bio-section {
+        padding: 5rem 0;
+        .instructor-bio-section-container {
+            .instructor-row {
+    
+                .image-column {
+                    width: 35%;
+                    .img {
+                        height: 20.15rem;
+                        width: 20.15rem;
+                    }
+
+                }
+            }
+        }
+    }
+
+    .more-instructors-row {
+        .crsl{
+            .crsl-container{
+                .carousel{
+                    .carousel-cell{
+                        width: 40% !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and(max-width: 850px){
+    .instructor-bio-section {
+        .instructor-bio-section-container {
+            .instructor-row {
+                flex-direction: column;
+                .image-column {
+                    width: 100%;
+                    margin-bottom: 3rem;
+                    .img {
+                        height: 30.15rem;
+                        width: 30.15rem;
+                    }
+                    .ball-png{
+                        left: 15%;
+                        width: 70%;
+                    }
+
+                }
+
+                .about-column{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .my-course-section{
+        margin-bottom: 5rem;
+        margin-top: 5rem;
+        .my-course-section-row{
+            .color-column{
+                display: none;
+            }
+
+            .other-courses-column{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and(max-width: 600px){
+    .instructor-bio-section {
+        .instructor-bio-section-container {
+            .instructor-row {
+                .image-column {
+                    .img {
+                        height: 20.15rem;
+                        width: 20.15rem;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .more-instructors-row {
+        .crsl{
+            .crsl-container{
+                .carousel{
+                    .carousel-cell{
+                        width: 70% !important;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and(max-width: 400px){
+
+    html{
+        font-size: 90%;
+    }
+
+    .header-heading{
+        font-size: 2.5rem !important;
+    }
+
+
+    .instructor-bio-section {
+        .instructor-bio-section-container {
+            .instructor-row {
+                .image-column {
+                    .img {
+                        height: 16.15rem;
+                        width: 16.15rem;
+                    }
+
+                }
+
+            }
+        }
+    }
+
+    .more-instructors-row {
+        .crsl{
+            .crsl-container{
+                .carousel{
+                    .carousel-cell{
+                        width: 90% !important;
+                    }
+                }
+            }
+        }
+    }
+
+}

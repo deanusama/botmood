@@ -1,0 +1,353 @@
+@media only screen and(max-width: 1400px){
+    .container{
+        width: 100%;
+        padding: 0 2%;
+    }
+}
+
+@media only screen and(max-width: 1200px){
+    .header-content-container{
+        width: 60% !important;
+    }
+    
+
+    .how-to-enroll-heading{
+        width: 100% !important;
+    }
+
+    .crsl{
+        .crsl-container{
+            .carousel-cell{
+                width: 35% !important;
+            }
+        }
+    }
+
+    .Device-section{
+        .device-container{
+            top: 0%;
+            left: 20%;
+            .device-heading{
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            .btn-last{
+                padding: 1rem 3rem !important;
+            }
+        }
+    }
+}
+
+@media only screen and(max-width: 900px){
+
+    body{
+        overflow-x: hidden !important;
+    }
+
+    .header-content-container{
+        width: 80% !important;
+    }
+    
+
+    .how-to-enroll-heading{
+        width: 100% !important;
+    }
+
+    .how-to-enroll-row{
+            flex-direction: column;
+        .col{
+            width: 100% !important;
+        }
+    }
+
+    .build-your-skill-row{
+        flex-direction: column;
+    .col{
+        width: 100% !important;
+    }
+}
+
+    .crsl{
+        .crsl-container{
+            .carousel-cell{
+                width: 45% !important;
+            }
+        }
+    }
+
+    .Device-section{
+        img{
+            margin-left: 0;
+            width: 100%;
+        }
+        .device-container{
+            top: 0%;
+            left: 20%;
+            .device-heading{
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            .btn-last{
+                padding: 1rem 3rem !important;
+            }
+        }
+    }
+}
+
+@media only screen and(max-width: 650px){
+    .header-content-container{
+        width: 100% !important;
+    }
+    
+
+    .how-to-enroll-heading{
+        width: 100% !important;
+    }
+
+    .how-to-enroll-row{
+            flex-direction: column;
+        .col{
+            width: 100% !important;
+        }
+    }
+
+    .build-your-skill-row{
+        flex-direction: column;
+    .col{
+        width: 100% !important;
+    }
+}
+
+    .my-course-section{
+        .flex-carousel{
+            .flex-container{
+                .color-column-container{
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .crsl{
+        .crsl-container{
+            .carousel-cell{
+                width: 60% !important;
+            }
+        }
+    }
+
+    .Device-section{
+        img{
+            margin-left: 0;
+            width: 100%;
+        }
+        .device-container{
+            top: 0%;
+            left: 10%;
+            .device-heading{
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            .btn-last{
+                padding: 1rem 3rem !important;
+            }
+        }
+    }
+}
+
+@media only screen and(max-width: 480px){
+
+    .main-header{
+        .main-header-container{
+            .main-header-icons-div{
+                padding-left: 0 !important;
+                flex-wrap: wrap;
+                justify-content: end;
+                img{
+                    margin-top: 2rem;
+                }
+            }
+        
+        }
+    }
+    .header-content-container{
+        width: 100% !important;
+    }
+    
+
+    .how-to-enroll-heading{
+        width: 100% !important;
+    }
+
+    .how-to-enroll-row{
+            flex-direction: column;
+            .how-to-column{
+                margin-bottom: 5rem;
+            }
+        .col{
+            width: 100% !important;
+        }
+    }
+
+    .build-your-skill-row{
+        flex-direction: column;
+    .col{
+        width: 100% !important;
+    }
+}
+
+    .my-course-section{
+        .flex-carousel{
+            .flex-container{
+                .color-column-container{
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .crsl{
+        .crsl-container{
+            .carousel-cell{
+                width: 80% !important;
+            }
+        }
+    }
+
+    .Device-section{
+        position: static;
+        img{
+            margin-left: 0;
+            width: 100%;
+        }
+        .device-container{
+            position: static;
+            .device-heading{
+                margin-top: 2rem;
+                font-size: 2rem;
+                margin-bottom: 2rem;
+                text-align: center;
+            }
+
+            .device-btn{
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media only screen and(max-width: 400px){
+
+    html{
+        font-size: 90%;
+    }
+
+
+    .main-header{
+        .main-header-container{
+            .main-header-icons-div{
+                padding-left: 0 !important;
+                flex-wrap: wrap;
+                justify-content: end;
+                img{
+                    margin-top: 2rem;
+                }
+            }
+        
+        }
+
+        .main-btn{
+            width: 100%;
+            text-align: center;
+        }
+    }
+    .header-content-container{
+        width: 100% !important;
+    }
+    
+
+    .how-to-enroll-heading{
+        width: 100% !important;
+    }
+    
+    .how-to-enroll-container{
+        // padding-right: 0 !important;
+        padding-left: 2%;
+    }
+    .how-to-enroll-row{
+       flex-direction: column;
+            .how-to-column{
+                margin-bottom: 5rem;
+            }
+        .col{
+            width: 100% !important;
+            .step-container{
+                flex-direction: column;
+                .step-number,
+                .step-number-2{
+                    justify-content: center;
+                    display: flex;
+                    align-items: baseline;
+                    margin-top: 2rem;
+                    margin-bottom: 2rem;
+                    width: 100%;
+                    padding: 1rem 2.87rem !important;
+                    h2{
+                        margin-bottom: 1rem !important;
+                        margin-top: 1rem !important;
+                        margin-right: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .build-your-skill-row{
+        flex-direction: column;
+    .col{
+        width: 100% !important;
+    }
+}
+
+    .my-course-section{
+        .flex-carousel{
+            .flex-container{
+                .color-column-container{
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .crsl{
+        .crsl-container{
+            .carousel-cell{
+                width: 100% !important;
+            }
+        }
+    }
+
+    .Device-section{
+        position: static;
+        img{
+            margin-left: auto;
+            width: 90% !important;
+        }
+        .device-container{
+            position: static;
+            .device-heading{
+                margin-top: 2rem;
+                font-size: 2rem;
+                margin-bottom: 2rem;
+                text-align: center;
+            }
+
+            .device-btn{
+                text-align: center;
+            }
+        }
+    }
+}

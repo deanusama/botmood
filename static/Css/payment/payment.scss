@@ -1,0 +1,511 @@
+/*********** Variables *************/
+// Color Variables
+$link-color: black;
+
+
+
+
+
+/*********** Universal Styling *************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/*********** Basic Styling *************/
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1410px;
+}
+
+.mr-0 {
+    margin-right: 0 !important;
+}
+
+.justify-content-between {
+    justify-content: space-between !important;
+}
+
+@font-face {
+    font-family: "ProximaNova";
+    src: url(../Fonts/ProximaNova-Extrabold.otf);
+    font-style: normal;
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "ProximaNova";
+    src: url(../Fonts/ProximaNova-Bold.otf);
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "ProximaNova";
+    src: url(../Fonts/ProximaNova-Regular.otf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+/*********** Main Section *************/
+.main-section {
+    position: relative;
+
+    .bgc-img {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 45%;
+        height: 100%;
+    }
+
+    .main-section-container {
+        .row {
+            display: flex;
+
+            .text-column {
+                padding: 3.125rem 0;
+                text-shadow: 1px 1px 1px black;
+                margin: 0;
+
+                .back-link-div {
+                    margin-bottom: 2.18rem;
+
+                    h2 {
+                        .back-link {
+                            font-size: 2rem;
+                            font-family: "ProximaNova";
+                            font-weight: 700;
+                            color: white;
+                        }
+                    }
+                }
+
+                .trial-div {
+                    .trial-text {
+                        font-size: 1.1875rem;
+                        font-family: "ProximaNova";
+                        font-weight: 700;
+                        color: white;
+                    }
+                }
+
+                .heading-div {
+                    margin: 1.43rem 0;
+
+                    .heading {
+                        font-size: 3.75rem;
+                        font-family: "ProximaNova";
+                        font-weight: 900;
+                        color: white;
+                    }
+                }
+
+                .paragraph-div {
+                    margin-bottom: 6.25rem;
+
+                    .paragraph {
+                        font-family: "ProximaNova";
+                        font-weight: 400;
+                        font-size: 1.125rem;
+                        line-height: 2.5rem;
+                        color: white;
+                        word-spacing: 0.25rem;
+                    }
+                }
+
+                .floating-links-div {
+                    width: 100%;
+                    position: relative;
+                    height: 23.37rem;
+
+                    .floating-link-div {
+                        border-radius: 10px;
+                    }
+
+                    .div-0 {
+                        display: inline-block;
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        height: 7.56rem;
+                        width: 7.56rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: #fff;
+
+                        img {
+                            width: 5.38rem;
+                            height: 5.1rem;
+                            display: block;
+                        }
+                    }
+
+                    .div-1 {
+                        display: inline-block;
+                        position: absolute;
+                        left: 30%;
+                        top: -5%;
+                        transform: translate(-30%, 5%);
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        
+                        .icon-container {
+                            background-color: #fff;
+                            border-radius: 10px;
+                            height: 4.125rem;
+                            width: 4.125rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            .fas {
+                                font-size: 2.5rem;
+                                color: #ff9d68;
+                                text-shadow: none;
+                            }
+                        }
+
+                        .icon-text{
+                            font-size: 1.375rem;
+                            font-family: "ProximaNova";
+                            font-weight: 400;
+                            color: white;
+                            margin-top: 1.3125rem;
+                        }
+
+
+                    }
+
+                    .div-2 {
+                        display: inline-block;
+                        position: absolute;
+                        right: 0%;
+                        top: 30%;
+                        transform: translate(0%, -30%);
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        
+                        .icon-container {
+                            background-color: #fff;
+                            border-radius: 10px;
+                            height: 4.125rem;
+                            width: 4.125rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            .fa-link {
+                                font-size: 2.5rem;
+                                color: #ff9d68;
+                                text-shadow: none;
+                            }
+                        }
+
+                        .icon-text{
+                            font-size: 1.375rem;
+                            font-family: "ProximaNova";
+                            font-weight: 400;
+                            color: white;
+                            margin-top: 1.3125rem;
+                        }
+
+
+                    }
+
+                    .div-3 {
+                        display: inline-block;
+                        position: absolute;
+                        right: 10%;
+                        bottom: 0%;
+                        transform: translate(-30%, 0%);
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        
+                        .icon-container {
+                            background-color: #fff;
+                            border-radius: 10px;
+                            height: 4.125rem;
+                            width: 4.125rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            .far {
+                                font-size: 2.5rem;
+                                color: #ff9d68;
+                                text-shadow: none;
+                            }
+                        }
+
+                        .icon-text{
+                            font-size: 1.375rem;
+                            font-family: "ProximaNova";
+                            font-weight: 400;
+                            color: white;
+                            margin-top: 1.3125rem;
+                        }
+
+
+                    }
+
+                    .div-4 {
+                        display: inline-block;
+                        position: absolute;
+                        left: 30%;
+                        bottom: -10%;
+                        transform: translate(-30%, 10%);
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        
+                        .icon-container {
+                            background-color: #fff;
+                            border-radius: 10px;
+                            height: 4.125rem;
+                            width: 4.125rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            .fas {
+                                font-size: 2.5rem;
+                                color: #ff9d68;
+                                text-shadow: none;
+                            }
+                        }
+
+                        .icon-text{
+                            font-size: 1.375rem;
+                            font-family: "ProximaNova";
+                            font-weight: 400;
+                            color: white;
+                            margin-top: 1.3125rem;
+                        }
+
+
+                    }
+
+                    .div-5 {
+                        display: inline-block;
+                        position: absolute;
+                        left: 5%;
+                        bottom: 25%;
+                        transform: translate(-5%, -25%);
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        
+                        .icon-container {
+                            background-color: #fff;
+                            border-radius: 10px;
+                            height: 4.125rem;
+                            width: 4.125rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            .fas {
+                                font-size: 1.8rem;
+                                color: #ff9d68;
+                                text-shadow: none;
+                            }
+                        }
+
+                        .icon-text{
+                            font-size: 1.375rem;
+                            font-family: "ProximaNova";
+                            font-weight: 400;
+                            color: white;
+                            margin-top: 1.3125rem;
+                        }
+
+
+                    }
+                }
+            }
+
+            .form-column {
+                padding: 3.125rem 0 8.43rem 0;
+                margin-top: 0;
+                margin-bottom: 0;
+
+                .payment {
+                    margin-left: 5.06rem;
+
+                    .payment-heading {
+                        margin-bottom: 3.125rem;
+
+                        h1 {
+                            font-size: 3rem;
+                            font-family: ProximaNova;
+                            font-weight: 900;
+                        }
+                    }
+
+                    .form-div {
+                        margin-bottom: 4.1rem;
+
+                        .form-group {
+                            margin-bottom: 2.5rem;
+                            display: flex;
+                            align-items: center;
+
+                            &:nth-of-type(3) {
+                                margin-bottom: 4.56rem;
+
+                                .City-div {
+                                    width: 30%;
+                                }
+
+                                .address-div {
+                                    width: 70%;
+                                }
+                            }
+
+                            &:last-of-type {
+                                align-items: flex-end;
+
+                                .discount-div {
+                                    width: 84%;
+                                }
+
+                                .btn-div {
+                                    width: max-content;
+                                }
+                            }
+
+                            div {
+                                margin-right: 1rem;
+                                width: 48%;
+
+                                label {
+                                    padding-left: 1rem;
+                                    font-family: "ProximaNova";
+                                    font-weight: 400;
+                                    font-size: 1.125rem;
+                                    margin-bottom: 1.81rem;
+                                    display: block;
+                                }
+
+                                input {
+                                    color: #999999;
+                                    font-family: ProximaNova;
+                                    font-weight: 700;
+                                    padding-left: 1.875rem;
+                                    outline: none;
+                                    height: 2.68rem;
+                                    width: 100%;
+                                    border: 1px solid #e1e1e1;
+                                    background: none;
+                                    border-radius: 5px;
+
+                                    &:focus {
+                                        border: 1px solid #20f384;
+                                    }
+                                }
+                            }
+
+                        }
+
+                        .form-btn {
+                            outline: none;
+                            background-color: #865bf1;
+                            font-size: 1.125rem;
+                            font-family: "ProximaNova";
+                            font-weight: 400;
+                            height: 2.68rem;
+                            width: 6.375rem;
+                            border: none;
+                            border-radius: 5px;
+                            cursor: pointer;
+                            color: white;
+                        }
+
+                    }
+
+                    .payment-calculation-div {
+                        padding-bottom: 2.1rem;
+                        border-bottom: 1px solid #999999;
+
+                        .calculation {
+                            padding: 0 1.87rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            margin-bottom: 2.31rem;
+
+                            p {
+                                font-family: ProximaNova;
+                                font-size: 1.125rem;
+                                font-weight: 400;
+                            }
+
+                            &:last-of-type {
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+
+                    .grandcalculation-container {
+                        margin: 2.1rem 0 4.375rem 0;
+                        padding: 0 1.87rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        strong {
+                            font-family: ProximaNova;
+                            font-size: 1.125rem;
+                            font-weight: 700;
+                        }
+
+                        p {
+                            font-family: ProximaNova;
+                            font-size: 1.125rem;
+                            font-weight: 400;
+                        }
+
+                    }
+
+                    .buy-now-btn-div {
+                        text-align: right;
+
+                        .buy-now-btn {
+                            background-color: #20f384;
+                            font-size: 1.125rem;
+                            font-family: "ProximaNova";
+                            font-weight: 700;
+                            height: 3.62rem;
+                            width: 12.87rem;
+                            border: none;
+                            border-radius: 5px;
+                            cursor: pointer;
+                            outline: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

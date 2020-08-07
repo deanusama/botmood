@@ -1,0 +1,766 @@
+/*********** Variables *************/
+/*********** Universal Styling *************/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*********** Basic Styling *************/
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1410px;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url(../Fonts/ProximaNova-Extrabold.otf);
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url(../Fonts/ProximaNova-Bold.otf);
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url(../Fonts/ProximaNova-Regular.otf);
+  font-style: normal;
+  font-weight: 400;
+}
+
+/*********** Main Section *************/
+.navbar-header-redesign {
+  height: 8.25rem;
+  border-bottom: 1px solid #e1e1e1;
+  padding: 2%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-header-redesign .hero-text a {
+  font-family: ProximaNova;
+  color: black;
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+
+.navbar-header-redesign img {
+  height: 3.3rem;
+  width: 3.3rem;
+  border-radius: 50%;
+}
+
+.navbar-header-redesign .profile-icon {
+  height: 5.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar-header-redesign .profile-icon:hover ~ .profile-submenu {
+  display: block !important;
+}
+
+.navbar-header-redesign .profile-submenu {
+  z-index: 999999;
+  min-width: 290px;
+  display: none;
+  position: absolute;
+  top: 6.7rem;
+  right: 02%;
+  border-radius: 5px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05), 0 4px 12px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05), 0 4px 12px rgba(0, 0, 0, 0.05);
+  font-family: ProximaNova;
+  border: 1px solid #e1e1e1;
+}
+
+.navbar-header-redesign .profile-submenu .profile-menu-content a:hover {
+  color: #ff9d68 !important;
+}
+
+.navbar-header-redesign .profile-submenu .profile-menu-content .email-info {
+  border-bottom: 1px solid #e1e1e1;
+  padding: 2rem 1rem;
+}
+
+.navbar-header-redesign .profile-submenu .profile-menu-content .email-info a {
+  font-family: "ProximaNova";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-header-redesign .profile-submenu .profile-menu-content .email-info img {
+  border-radius: 50%;
+  height: 3.3rem;
+  width: 3.3rem;
+  margin-right: 2rem;
+}
+
+.navbar-header-redesign .profile-submenu .profile-menu-content .email-info .name-email .name {
+  font-family: "ProximaNova";
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.navbar-header-redesign .profile-submenu .profile-menu-content .email-info .name-email p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #999;
+}
+
+.navbar-header-redesign .profile-submenu .profile-menu-content .other-links {
+  border-bottom: 1px solid #e1e1e1;
+  padding: 2rem 1rem;
+}
+
+.navbar-header-redesign .profile-submenu .profile-menu-content .other-links a {
+  font-family: "ProximaNova";
+  font-size: 1rem;
+  font-weight: 400;
+  color: black;
+  display: block;
+}
+
+.navbar-header-redesign .profile-submenu .profile-menu-content .other-links .profile-link {
+  margin: 2rem 0;
+}
+
+.navbar-header-redesign .profile-submenu .profile-menu-content .log-out {
+  border-bottom: 1px solid #e1e1e1;
+  padding: 2rem 1rem;
+}
+
+.navbar-header-redesign .profile-submenu .profile-menu-content .log-out a {
+  font-family: "ProximaNova";
+  font-size: 1rem;
+  font-weight: 400;
+  color: black;
+  display: block;
+}
+
+.navbar-header-redesign .profile-submenu .profile-menu-content .log-out .help-link {
+  margin-bottom: 2rem;
+}
+
+.navbar-header-redesign .profile-submenu .profile-menu-content .blog-link-div .blog-link {
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: ProximaNova;
+  padding: 2rem 1rem;
+}
+
+.navbar-header-redesign .profile-submenu .profile-menu-content .blog-link-div .blog-link .blog-name {
+  color: black;
+}
+
+.navbar-header-redesign .profile-submenu .profile-menu-content .blog-link-div .blog-link .blog-about {
+  margin-top: 0.5rem;
+  color: #999;
+}
+
+.navbar-header-redesign .profile-submenu .profile-menu-content .blog-link-div .blog-link .fas {
+  margin-left: 2rem;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.navbar-header-redesign .profile-submenu:hover {
+  display: block;
+}
+
+.edit-profile {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  position: relative;
+}
+
+.edit-profile .ball-image {
+  position: absolute;
+  top: 20%;
+  right: -10%;
+  -webkit-transform: translate(10%, -8%);
+          transform: translate(10%, -8%);
+}
+
+.edit-profile .container .edit-profile-div {
+  width: 100%;
+}
+
+.edit-profile .container .edit-profile-div .heading-and-img {
+  margin-bottom: 3.81rem;
+  padding: 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.edit-profile .container .edit-profile-div .heading-and-img .edit-profile-heading {
+  font-family: ProximaNova;
+  font-weight: 900;
+  font-size: 3.75rem;
+  margin-right: 30%;
+}
+
+.edit-profile .container .edit-profile-div .heading-and-img .arrow {
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.edit-profile .container .edit-profile-div .form-container form {
+  -webkit-transition: all 3s;
+  transition: all 3s;
+}
+
+.edit-profile .container .edit-profile-div .form-container form .form-group-1 {
+  margin-bottom: 1.81rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.edit-profile .container .edit-profile-div .form-container form .form-group-1 .first-name {
+  margin-right: 2rem;
+}
+
+.edit-profile .container .edit-profile-div .form-container form .form-group-2 {
+  margin-bottom: 1.81rem;
+}
+
+.edit-profile .container .edit-profile-div .form-container form .form-group-3 {
+  margin-bottom: 0;
+}
+
+.edit-profile .container .edit-profile-div .form-container form .form-group-3 .edit-password {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.edit-profile .container .edit-profile-div .form-container form .form-group-3 .edit-password .input-div {
+  margin-right: 2.5rem;
+}
+
+.edit-profile .container .edit-profile-div .form-container form .form-group-3 .edit-password strong {
+  font-family: ProximaNova;
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: #ff9d68;
+  cursor: pointer;
+}
+
+.edit-profile .container .edit-profile-div .form-container form .form-group-hidden {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fef7f8;
+  border-radius: 5px;
+  height: 0px;
+  overflow: hidden;
+  -webkit-transition: padding 0.3s;
+  transition: padding 0.3s;
+}
+
+.edit-profile .container .edit-profile-div .form-container form .group-active {
+  height: 100%;
+  padding: 2.875rem 1.025rem;
+}
+
+.edit-profile .container .edit-profile-div .form-container form .form-group label {
+  display: block;
+  font-family: ProximaNova;
+  font-weight: 400;
+  font-size: 1.125rem;
+  margin-bottom: 1.375rem;
+}
+
+.edit-profile .container .edit-profile-div .form-container form .form-group .input-div {
+  position: relative;
+  width: 25rem;
+}
+
+.edit-profile .container .edit-profile-div .form-container form .form-group .input-div input {
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+  border-radius: 5px;
+  width: 100%;
+  height: 3.375rem;
+  padding-left: 1.56rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-family: ProximaNova;
+  font-weight: 700;
+  font-size: 1rem;
+  outline: none;
+  -webkit-transition: border 0.3s;
+  transition: border 0.3s;
+}
+
+.edit-profile .container .edit-profile-div .form-container form .form-group .input-div input:focus {
+  border: 2px solid #20f384;
+}
+
+.edit-profile .container .edit-profile-div .form-container form .form-group .input-div .fas {
+  color: #20f384;
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+}
+
+.edit-profile .container .edit-profile-div .form-container form .form-group ::-webkit-input-placeholder {
+  color: #999999;
+}
+
+.edit-profile .container .edit-profile-div .form-container form .form-group :-ms-input-placeholder {
+  color: #999999;
+}
+
+.edit-profile .container .edit-profile-div .form-container form .form-group ::-ms-input-placeholder {
+  color: #999999;
+}
+
+.edit-profile .container .edit-profile-div .form-container form .form-group ::placeholder {
+  color: #999999;
+}
+
+.edit-profile .container .edit-profile-div .form-container form .btn-div {
+  text-align: right;
+  margin-top: 2.68rem;
+  width: 75%;
+}
+
+.edit-profile .container .edit-profile-div .form-container form .btn-div .submit-btn {
+  font-family: "ProximaNova";
+  font-weight: 700;
+  font-size: 1.125rem;
+  width: 12.85rem;
+  height: 3.625rem;
+  border: none;
+  background-color: #20f384;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.edit-profile .container .edit-profile-div .profile-tabs {
+  margin-bottom: 3.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.edit-profile .container .edit-profile-div .profile-tabs .profile-tab {
+  color: #999999;
+  cursor: pointer;
+  font-family: ProximaNova;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 5px solid transparent;
+  margin-right: 2rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.edit-profile .container .edit-profile-div .profile-tabs .profile-tab:hover {
+  color: black;
+  border-bottom: 5px solid #20f384;
+}
+
+.edit-profile .container .edit-profile-div .profile-tabs .profile-tab:last-of-type {
+  margin-right: 0;
+}
+
+.edit-profile .container .edit-profile-div .profile-tabs .active {
+  border-bottom: 5px solid #20f384;
+  color: black;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+
+.edit-profile .container .edit-profile-div .form-container-hidden {
+  height: 0px;
+  overflow: hidden;
+}
+
+.edit-profile .container .edit-profile-div .arrow-up {
+  -webkit-transform: rotate(180deg) !important;
+          transform: rotate(180deg) !important;
+}
+
+.my-course-section {
+  margin-bottom: 9.37rem;
+  display: none;
+}
+
+.my-course-section .my-course-section-container .my-course-section-row {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  padding: 0;
+}
+
+.my-course-section .my-course-section-container .my-course-section-row .col {
+  margin: 0;
+}
+
+.my-course-section .my-course-section-container .my-course-section-row .color-column {
+  padding-right: 2rem;
+}
+
+.my-course-section .my-course-section-container .my-course-section-row .color-column .color-column-container {
+  min-height: 23.48rem;
+  background-color: #20f384;
+  padding: 3.625rem 4rem;
+  margin: 0;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.my-course-section .my-course-section-container .my-course-section-row .color-column .color-column-container .col-heading-div {
+  margin-bottom: 2.18rem;
+}
+
+.my-course-section .my-course-section-container .my-course-section-row .color-column .color-column-container .col-heading-div .col-heading {
+  text-align: center;
+  font-family: ProximaNova;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.my-course-section .my-course-section-container .my-course-section-row .color-column .color-column-container .col-text-div {
+  margin-bottom: 2.80rem;
+}
+
+.my-course-section .my-course-section-container .my-course-section-row .color-column .color-column-container .col-text-div .col-text {
+  text-align: center;
+  font-family: ProximaNova;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.my-course-section .my-course-section-container .my-course-section-row .color-column .color-column-container .col-arrow-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.my-course-section .my-course-section-container .my-course-section-row .color-column .color-column-container .col-arrow-div img {
+  width: 3.625rem;
+  height: 1.87rem;
+}
+
+.my-course-section .my-course-section-container .my-course-section-row .color-column .color-column-container .col-arrow-div .arrow-left {
+  margin-top: -1px;
+  margin-right: 1rem;
+}
+
+.my-course-section .my-course-section-container .my-course-section-row .other-courses-column .other-courses-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.my-course-section .my-course-section-container .my-course-section-row .other-courses-column .other-courses-row .course-column {
+  padding: 1rem 1rem 1rem 0;
+}
+
+.my-course-section .my-course-section-container .my-course-section-row .other-courses-column .other-courses-row .course-column:last-of-type {
+  padding-right: 0;
+}
+
+.my-course-section .my-course-section-container .my-course-section-row .other-courses-column .other-courses-row .course-column .course-container {
+  max-width: 15.875rem;
+  min-height: 21.12rem;
+  background-color: #fff;
+  padding: 1rem 0.5rem;
+  border-radius: 10px;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+}
+
+.my-course-section .my-course-section-container .my-course-section-row .other-courses-column .other-courses-row .course-column .course-container:hover {
+  -webkit-box-shadow: 0 0rem 2.18rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0rem 2.18rem rgba(0, 0, 0, 0.15);
+}
+
+.my-course-section .my-course-section-container .my-course-section-row .other-courses-column .other-courses-row .course-column .course-container a {
+  color: black;
+}
+
+.my-course-section .my-course-section-container .my-course-section-row .other-courses-column .other-courses-row .course-column .course-container .course-img-div {
+  margin-bottom: 1.68rem;
+}
+
+.my-course-section .my-course-section-container .my-course-section-row .other-courses-column .other-courses-row .course-column .course-container .course-img-div img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.my-course-section .my-course-section-container .my-course-section-row .other-courses-column .other-courses-row .course-column .course-container .course-title-div {
+  margin-bottom: 0.93rem;
+}
+
+.my-course-section .my-course-section-container .my-course-section-row .other-courses-column .other-courses-row .course-column .course-container .course-title-div .course-title {
+  line-height: 1.5rem;
+  font-family: ProximaNova;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.my-course-section .my-course-section-container .my-course-section-row .other-courses-column .other-courses-row .course-column .course-container .course-text-div .course-text {
+  line-height: 1.2rem;
+  font-family: ProximaNova;
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: #999999;
+}
+
+.favorite-courses {
+  display: none;
+}
+
+.favorite-courses .favorite-course-container .favorite-course-row {
+  margin-bottom: 3.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.favorite-courses .favorite-course-container .favorite-course-row:last-of-type {
+  margin-bottom: 8.80rem;
+}
+
+.favorite-courses .favorite-course-container .favorite-course-row .course-container {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 23%;
+  min-width: 300px;
+  min-height: 21.12rem;
+  padding: 1rem 0.625rem;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+  margin-bottom: 3.75rem;
+}
+
+.favorite-courses .favorite-course-container .favorite-course-row .course-container:hover {
+  -webkit-box-shadow: 0 0rem 2.18rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0rem 2.18rem rgba(0, 0, 0, 0.15);
+}
+
+.favorite-courses .favorite-course-container .favorite-course-row .course-container:last-of-type {
+  margin-right: 0;
+}
+
+.favorite-courses .favorite-course-container .favorite-course-row .course-container a {
+  color: black;
+}
+
+.favorite-courses .favorite-course-container .favorite-course-row .course-container .course-card .course-card-img {
+  margin-bottom: 1.68rem;
+}
+
+.favorite-courses .favorite-course-container .favorite-course-row .course-container .course-card .course-card-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.favorite-courses .favorite-course-container .favorite-course-row .course-container .course-card .course-card-head-div {
+  margin-bottom: 0.93rem;
+  padding: 0rem 1.125rem;
+}
+
+.favorite-courses .favorite-course-container .favorite-course-row .course-container .course-card .course-card-head-div .course-card-head {
+  font-size: 1rem;
+  font-family: ProximaNova;
+  font-weight: 700;
+}
+
+.favorite-courses .favorite-course-container .favorite-course-row .course-container .course-card .course-card-info-div {
+  margin-bottom: 1.125rem;
+  padding: 0rem 1.125rem;
+}
+
+.favorite-courses .favorite-course-container .favorite-course-row .course-container .course-card .course-card-info-div .course-card-info {
+  line-height: 1.4rem;
+  font-size: 0.85rem;
+  font-family: ProximaNova;
+  font-weight: 400;
+  color: #999999;
+}
+
+.favorite-courses .favorite-course-container .favorite-course-row .course-container .course-card .course-card-icon-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0rem 1.125rem;
+}
+
+.favorite-courses .favorite-course-container .favorite-course-row .course-container .course-card .course-card-icon-div .fas {
+  font-size: 1.68rem;
+  color: #20f384;
+  margin-right: 1rem;
+}
+
+.favorite-courses .favorite-course-container .favorite-course-row .course-container .course-card .course-card-icon-div .icon-text {
+  font-size: 1.125rem;
+  font-family: ProximaNova;
+  font-weight: 700;
+}
+
+.page-footer {
+  padding: 0 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  font-family: ProximaNova;
+}
+
+.page-footer .copyright-text {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 700;
+}
+
+.page-footer .footer-list-redesign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-footer .footer-list-redesign .footer-item {
+  list-style: none;
+  margin-right: 1rem;
+}
+
+.page-footer .footer-list-redesign .footer-item:last-of-type {
+  margin-right: 0;
+}
+
+.page-footer .footer-list-redesign .footer-item .footer-link {
+  font-size: 1rem;
+  color: white;
+  font-weight: 700;
+}
+/*# sourceMappingURL=profile.css.map */

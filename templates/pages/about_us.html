@@ -1,0 +1,57 @@
+{% include 'important/base.html' %}
+{% block content %}
+{% load static %}
+
+<body>
+  <!-- Navbar Starts Here -->
+                    <div class="main-heading-div">
+                        <h1 class="main-heading">
+                            About
+                        </h1>
+                    </div>
+
+            <section class="blog-section">
+                <div class="container blog-section-container">
+                    <div class="row">
+                        <div class="col span-8-of-12 text-side">
+                            <div class="text-side-div">
+                                <p class="hero-blog-detail">
+                                    {{about.about}}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col span-4-of-12 featured-side">
+                            <div class="featured-side-container">
+  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    <!-- Section Ends Here -->
+
+
+
+    <!-- Footer Starts Here -->
+    <footer class="page-footer">
+        <div class="container page-footer__container">
+            <div class="copyright-text-div">
+                <strong class="copyright-text">
+                    &copy;2016-2020 TutorialPoints Company
+                </strong>
+            </div>
+            <div class="footer-links-div">
+                <ul class="footer-list">
+                    <li class="footer-item"><a href="#" class="footer-link">Facebook .</a></li>
+                    <li class="footer-item"><a href="#" class="footer-link">Twitter .</a></li>
+                    <li class="footer-item"><a href="#" class="footer-link">Linkdin</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Ends Here -->
+    <script src="{% static '/js/navbar.js' %}"></script>
+
+{% endblock content %}

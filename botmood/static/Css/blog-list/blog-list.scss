@@ -1,0 +1,335 @@
+/*********** Variables *************/
+// Color Variables
+$link-color: black;
+
+
+
+
+
+/*********** Universal Styling *************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*********** Basic Styling *************/
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1410px;
+}
+
+@font-face {
+    font-family: "ProximaNova";
+    src: url(../Fonts/ProximaNova-Extrabold.otf);
+    font-style: normal;
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "ProximaNova";
+    src: url(../Fonts/ProximaNova-Bold.otf);
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "ProximaNova";
+    src: url(../Fonts/ProximaNova-Regular.otf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+/*********** Main Section *************/
+
+.header-section {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../Images/Blog-List/2-women.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 3.5rem 0;
+
+    .header-section-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .back-link-div {
+        margin-bottom: 2.3rem;
+
+        .back-link {
+            font-family: ProximaNova;
+            font-weight: 700;
+            font-size: 2rem;
+            color: white;
+        }
+    }
+
+    .header-heading-div {
+        margin-bottom: 2.3rem;
+
+        .header-heading {
+            font-family: ProximaNova;
+            font-weight: 900;
+            font-size: 3.75rem;
+            color: white;
+        }
+    }
+
+    .header-para-div {
+        width: 77.50%;
+
+        .header-para {
+            text-align: center;
+            font-family: ProximaNova;
+            font-weight: 400;
+            font-size: 1.125rem;
+            line-height: 1.5rem;
+            color: white;
+        }
+    }
+}
+
+.buttons-section {
+    &-row {
+        padding: 6rem 5%;
+        padding-bottom: 0;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        // flex-wrap: wrap;
+
+        .button-section-div {
+            // margin-right: 5%;
+            min-width: 200px;
+            // flex-shrink: 0;
+            // flex-grow: 0;
+            text-align: center;
+
+            .btn-1 {
+                background-image: linear-gradient(to top, #303030, #303030);
+            }
+
+            .btn-2 {
+                background-image: linear-gradient(to top, #fe877c, #b6325f);
+            }
+
+            .btn-3 {
+                background-image: linear-gradient(to top, #ff748c, #ff7daf);
+            }
+
+            .btn-4 {
+                background-image: linear-gradient(to top, #0dcbff, #4760ff);
+            }
+
+            .btn-5 {
+                background-image: linear-gradient(to top, #ffcd9e, #ff849c);
+            }
+
+            .button-section {
+                border: none;
+                border-radius: 0.625rem;
+                outline: none;
+
+                .btn-link {
+                    padding: 1rem 3.68rem;
+                    display: block;
+                    font-family: ProximaNova;
+                    font-weight: 700;
+                    font-size: 1.125rem;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+// .carousel{
+//     height: 500px;
+//     // background-color: #000;
+//     .carousel-cell{
+//         margin: 10px;
+//         height: 200px;
+//         width: 300px;
+//         background-color: orange    ;
+//     }
+// }
+
+.blog-section {
+    padding-top: 6rem;
+    &-container {
+        .row {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: end;
+            .blog-container {
+                flex-shrink: 0;
+                width: 32%;
+                padding: 0 2rem;
+                margin-bottom: 5.31rem;
+                margin-left: 1%;
+                min-height: 580px;
+
+                &:first-of-type{
+                    margin-left: 0;
+                }
+
+                .blog {
+                    background-color: #fff;
+                    min-height: 630px;
+                    position: relative;
+                    border-radius: 10px;
+                    transition: box-shadow 0.3s;
+
+                    &:hover {
+                        box-shadow: 0px 0.75rem 2.18rem rgba(0, 0, 0, 0.18);
+                        .zero-image{
+                            transform: translate(2rem, -2rem);
+                        }
+                    }
+
+                    .zero-image {
+                        border-radius: 10px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: -1;
+                        width: 98%;
+                        transition: transform 0.3s ease;
+                    }
+
+                    a {
+                        color: black;
+                    }
+
+                    .blog-image {
+                        background-color: #fff;
+                        padding-bottom: 1rem;
+                        img {
+                            width: 100%;
+                            display: block;
+                            border-radius: 0.625rem;
+                        }
+                    }
+
+                    .blog-detail {
+                        padding-top: 0.5rem;
+                        background-color: #fff;
+                        border-radius: 10px;
+                        height: 20rem;
+                        .blog-heading {
+                            padding: 0 1rem;
+                            margin-bottom: 1.43rem;
+
+                            .heading {
+                                font-size: 1.875rem;
+                                font-family: ProximaNova;
+                                font-weight: 700;
+                                color: #000000D6;
+                            }
+                        }
+
+                        .blog-date {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            padding: 0 1rem;
+                            margin-bottom: 2rem;
+
+                            .date {
+                                font-family: ProximaNova;
+                                font-weight: 700;
+                                font-size: 1.05rem;
+                                color: #999999;
+                            }
+
+                            .views-count{
+                                // margin-left: 50%;
+                                font-family: ProximaNova;
+                                font-weight: 700;
+                                font-size: 1.05rem;
+                                color: #999999;
+                            }
+                        }
+
+                        .blog-text {
+                            padding: 0 1rem 1.8rem;
+
+                            .text {
+                                font-family: ProximaNova;
+                                font-weight: 400;
+                                font-size: 1.05rem;
+                                line-height: 1.8rem;
+                                color: rgba(0,0,0,.55);
+                            }
+                        }
+                    }
+                }
+            }
+
+           
+
+        }
+
+        .browse-more-row{
+            justify-content: center;
+            .browse-more-btn{
+                outline: none;
+                background:none;
+                border: none;
+                cursor: pointer;
+                .browse-more-heading{
+                    font-family: ProximaNova;
+                font-weight: 700;
+                font-size: 1.125rem;
+                    text-align: center;
+                    padding-bottom: 6.18rem;
+            }
+            }
+        }
+    }
+}
+
+.pagination{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 5rem;
+    li{
+        a{
+            margin: 2rem;
+            font-family: ProximaNova;
+            font-weight: 700;
+            height: 52px;
+            width: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+        }
+
+        .active{
+            background-color: #20f384;
+            border-radius: 5px;
+            color: white !important;
+        }
+    }
+}
+
+

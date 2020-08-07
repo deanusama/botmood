@@ -1,0 +1,647 @@
+/*********** Variables *************/
+// Color Variables
+$link-color: black;
+
+
+
+
+
+/*********** Universal Styling *************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*********** Basic Styling *************/
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1410px;
+}
+
+@font-face {
+    font-family: "ProximaNova";
+    src: url(../Fonts/ProximaNova-Extrabold.otf);
+    font-style: normal;
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "ProximaNova";
+    src: url(../Fonts/ProximaNova-Bold.otf);
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "ProximaNova";
+    src: url(../Fonts/ProximaNova-Regular.otf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+/*********** Main Section *************/
+.navbar-header-redesign{
+    height: 8.25rem;
+    border-bottom: 1px solid #e1e1e1;
+        padding: 2%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .hero-text{
+            a{
+                font-family: ProximaNova;
+                color: black;
+                font-weight: 900;
+                font-size: 2.5rem;
+            }
+        }
+        img{
+            height: 3.3rem;
+            width: 3.3rem;
+            border-radius: 50%;
+        }
+
+        .profile-icon{
+            height: 5.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;;
+            &:hover ~{
+                // display: none;
+                .profile-submenu{
+                    display: block !important;
+                }
+            }
+        }
+
+        .profile-submenu{
+            z-index: 999999;
+            min-width: 290px;
+            display: none;
+            position: absolute;
+            top: 6.7rem;
+            right: 02%;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,.05),0 4px 12px rgba(0,0,0,.05);
+            font-family: ProximaNova;
+            border: 1px solid #e1e1e1;
+            .profile-menu-content{
+                a:hover{
+                    color: #ff9d68 !important;
+                }
+                .email-info{
+                    border-bottom: 1px solid #e1e1e1;
+                    padding: 2rem 1rem;
+                    a{
+                        font-family: "ProximaNova";
+                        display: flex;
+                    align-items: center;
+                    }
+                    img{
+                        border-radius: 50%;
+                        height: 3.3rem;
+                        width: 3.3rem;
+                        margin-right: 2rem;
+                    }
+
+                    .name-email{
+                        .name{
+                            font-family: "ProximaNova";
+                            font-size: 1rem;
+                            font-weight: 700;
+                            margin-bottom: 1rem;
+                            color: black;
+                        }
+                        p{
+                            font-size: 1rem;
+                            font-weight: 400;
+                            color: #999;
+                        }
+                    }
+                }
+
+                .other-links{
+                    border-bottom: 1px solid #e1e1e1;
+                    padding:2rem 1rem;
+                    a{
+                        font-family: "ProximaNova";
+                        font-size: 1rem;
+                        font-weight: 400;
+                        color: black;
+                        display: block;
+                    }
+
+                    .profile-link{
+                        margin: 2rem 0;
+                    }
+                }
+
+                .log-out{
+                    border-bottom: 1px solid #e1e1e1;
+                    padding:2rem 1rem;
+                    a{
+                        font-family: "ProximaNova";
+                        font-size: 1rem;
+                        font-weight: 400;
+                        color: black;
+                        display: block;
+                    }
+
+                    .help-link{
+                        margin-bottom: 2rem;
+                    }
+                }
+
+                .blog-link-div{
+                    .blog-link{
+                        color: black;
+                        display: flex;
+                        align-items: center;
+                        font-family: ProximaNova;
+                        padding: 2rem 1rem;
+                        .blog-name{
+                            color: black;
+                        }
+                        
+                        .blog-about{
+                            margin-top: 0.5rem;
+                            color: #999;
+                        }
+
+                        .fas{
+                            margin-left: 2rem;
+                            color: black;
+                            font-size: 1.5rem;
+                        }
+                    }
+
+                }
+            }
+
+            &:hover{
+                display: block;
+            }
+        }
+}
+
+.edit-profile {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    position: relative;
+
+    .ball-image{
+        position: absolute;
+        top: 20%;
+        right: -10%;
+        transform: translate(10%, -8%);
+    }
+
+    .container {
+        .edit-profile-div {
+            width: 100%;
+
+            .heading-and-img {
+                margin-bottom: 3.81rem;
+                padding: 0 2rem;
+                display: flex;
+                align-items: center;
+                // justify-content: space-between;
+
+                .edit-profile-heading {
+                    font-family: ProximaNova;
+                    font-weight: 900;
+                    font-size: 3.75rem;
+                    margin-right: 30%;
+                }
+
+                .arrow {
+                    cursor: pointer;
+                    transition: transform 0.3s;
+                }
+            }
+
+            .form-container {
+                form {
+                    transition: all 3s;
+
+                    .form-group-1 {
+                        margin-bottom: 1.81rem;
+                        display: flex;
+                        align-items: center;
+                        .first-name{
+                            margin-right: 2rem;
+                        }
+                    }
+
+                    .form-group-2 {
+                        margin-bottom: 1.81rem;
+                    }
+
+                    .form-group-3 {
+                        margin-bottom: 0;
+
+                        .edit-password {
+                            display: flex;
+                            align-items: center;
+
+                            .input-div {
+                                margin-right: 2.5rem;
+                            }
+
+                            strong {
+                                font-family: ProximaNova;
+                                font-weight: 700;
+                                font-size: 1.125rem;
+                                color: #ff9d68;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+
+                    .form-group-hidden {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        background-color: #fef7f8;
+                        border-radius: 5px;
+                        height: 0px;
+                        overflow: hidden;
+                        transition: padding 0.3s;
+                    }
+
+                    .group-active {
+                        height: 100%;
+                        padding: 2.875rem 1.025rem;
+                    }
+
+                    .form-group {
+                        label {
+                            display: block;
+                            font-family: ProximaNova;
+                            font-weight: 400;
+                            font-size: 1.125rem;
+                            margin-bottom: 1.375rem;
+                        }
+
+                        .input-div{
+                            position: relative;
+                            width: 25rem;
+                            input {
+                                background-color: #fff;
+                                border: 1px solid #e1e1e1;
+                                border-radius: 5px;
+                                width: 100%;
+                                height: 3.375rem;
+                                padding-left: 1.56rem;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-around;
+                                font-family: ProximaNova;
+                                font-weight: 700;
+                                font-size: 1rem;
+                                outline: none;
+                                transition: border 0.3s;
+                                &:focus{
+                                    border:2px solid rgba($color: #20f384, $alpha: 1.0);
+                                }
+                            }
+                            .fas{
+                                color: #20f384;
+                                position: absolute;
+                                top: 50%;
+                                right: 1rem;
+                                transform: translate(0%, -50%);
+                            }
+                        }
+
+                        ::placeholder {
+                            color: #999999;
+                        }
+                    }
+
+                    .btn-div {
+                        text-align: right;
+                        margin-top: 2.68rem;
+                        width: 75%;
+
+                        .submit-btn {
+                            font-family: "ProximaNova";
+                            font-weight: 700;
+                            font-size: 1.125rem;
+                            width: 12.85rem;
+                            height: 3.625rem;
+                            border: none;
+                            background-color: #20f384;
+                            border-radius: 5px;
+                            outline: none;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+            .profile-tabs{
+                margin-bottom: 3.8rem;
+                display: flex;
+                align-items: center;
+                .profile-tab{
+                    color: #999999;
+                    cursor: pointer;
+                    font-family: ProximaNova;
+                    font-weight: 700;
+                    font-size: 1.2rem;
+                    padding-bottom: 0.5rem;
+                    border-bottom: 5px solid transparent;
+                    margin-right: 2rem;
+                    transition: all 0.3s;
+                    &:hover{
+                        color: black;
+                        border-bottom: 5px solid #20f384;
+                    }
+                    &:last-of-type{
+                        margin-right: 0;
+                    }
+                }
+
+                .active{
+                    border-bottom: 5px solid #20f384;
+                    color: black;
+                    user-select: none;
+                    pointer-events: none;
+                }
+            }
+
+            .form-container-hidden {
+                height: 0px;
+                overflow: hidden;
+            }
+
+            .arrow-up {
+                transform: rotate(180deg) !important;
+            }
+        }
+    }
+}
+
+.my-course-section {
+    margin-bottom: 9.37rem;
+    display: none;
+    .my-course-section-container {
+
+        .my-course-section-row {
+            background-color: #f1f1f1;
+            border-radius: 10px;
+            padding: 0;
+
+            .col {
+                margin: 0;
+            }
+
+            .color-column {
+                padding-right: 2rem;
+                
+                .color-column-container {
+                    min-height: 23.48rem;
+                    background-color: #20f384;
+                    padding: 3.625rem 4rem;
+                    margin: 0;
+                    border-radius: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    .col-heading-div {
+                        margin-bottom: 2.18rem;
+
+                        .col-heading {
+                            text-align: center;
+                            font-family: ProximaNova;
+                            font-weight: 700;
+                            font-size: 3rem;
+                        }
+                    }
+
+                    .col-text-div {
+                        margin-bottom: 2.80rem;
+
+                        .col-text {
+                            text-align: center;
+                            font-family: ProximaNova;
+                            font-weight: 700;
+                            font-size: 1.125rem;
+                        }
+                    }
+
+                    .col-arrow-div {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        img {
+                            width: 3.625rem;
+                            height: 1.87rem;
+                        }
+
+                        .arrow-left {
+                            margin-top: -1px;
+                            margin-right: 1rem;
+                        }
+                    }
+                }
+            }
+
+            .other-courses-column{
+                .other-courses-row{
+                    display: flex;
+                    justify-content: space-between;
+
+                    .course-column {
+                        padding: 1rem 1rem 1rem 0;
+                        &:last-of-type{
+                            padding-right: 0;
+                        }
+        
+                        .course-container {
+                            max-width: 15.875rem;
+                            min-height: 21.12rem;
+                            background-color: #fff;
+                            padding: 1rem 0.5rem;
+                            border-radius: 10px;
+                            transition: box-shadow 0.3s;
+                &:hover{
+                    box-shadow:0 0rem 2.18rem rgba($color: #000000, $alpha: 0.15);
+                }
+        
+                            a {
+                                color: black;
+                            }
+        
+                            .course-img-div {
+                                margin-bottom: 1.68rem;
+        
+                                img {
+                                    border-radius: 10px;
+                                    width: 100%;
+                                }
+                            }
+        
+                            .course-title-div {
+                                margin-bottom: 0.93rem;
+        
+                                .course-title {
+                                    line-height: 1.5rem;
+                                    font-family: ProximaNova;
+                                    font-weight: 700;
+                                    font-size: 1rem;
+                                }
+                            }
+        
+                            .course-text-div {
+                                .course-text {
+                                    line-height: 1.2rem;
+                                    font-family: ProximaNova;
+                                    font-weight: 400;
+                                    font-size: 0.75rem;
+                                    color: #999999;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.favorite-courses{
+    display: none;
+    .favorite-course-container{
+        .favorite-course-row{
+            margin-bottom: 3.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            
+            &:last-of-type{
+                margin-bottom: 8.80rem;
+            }
+            .course-container{
+                flex-shrink: 0;
+                // margin-right: 1%;
+                width: 23%;
+                min-width: 300px;
+                min-height: 21.12rem;
+                padding: 1rem 0.625rem;
+                border: 1px solid #e1e1e1;
+                border-radius: 10px;
+                transition: box-shadow 0.3s;
+                margin-bottom: 3.75rem;
+                &:hover{
+                    box-shadow:0 0rem 2.18rem rgba($color: #000000, $alpha: 0.15);
+                }
+                &:last-of-type{
+                    margin-right: 0;
+                }
+
+                a{
+                    color: black;
+                }
+                .course-card{
+                    .course-card-img{
+                        margin-bottom: 1.68rem;
+                        img{
+                            width: 100%;
+                            border-radius: 10px;
+                        }
+                    }
+
+                    .course-card-head-div{
+                        margin-bottom: 0.93rem;
+                        padding: 0rem 1.125rem;
+                        .course-card-head{
+                            font-size: 1rem;
+                            font-family: ProximaNova;
+                            font-weight: 700;
+                        }
+                    }
+
+                    .course-card-info-div{
+                        margin-bottom: 1.125rem;
+                        padding: 0rem 1.125rem;
+                        .course-card-info{
+                            line-height: 1.4rem;
+                            font-size: 0.85rem;
+                            font-family: ProximaNova;
+                            font-weight: 400;
+                            color: #999999;
+                        }
+                    }
+
+                    .course-card-icon-div{
+                        display: flex;
+                        align-items: center;
+                        padding: 0rem 1.125rem;
+                        .fas{
+                            font-size: 1.68rem;
+                            color: #20f384;
+                            margin-right: 1rem;
+                        }
+
+                        .icon-text{
+                            font-size: 1.125rem;
+                            font-family: ProximaNova;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.page-footer{
+    padding: 0 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    font-family: ProximaNova;
+    .copyright-text{
+        font-size: 1.2rem;
+        color: white;
+        font-weight: 700;
+    }
+
+    .footer-list-redesign{
+        display: flex;
+        align-items: center;
+        .footer-item{
+            list-style: none;
+            margin-right: 1rem;
+            &:last-of-type{
+                margin-right: 0;
+            }
+            .footer-link{
+                font-size: 1rem;
+                color: white;
+                font-weight: 700;
+            }
+        }
+    }
+}

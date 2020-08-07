@@ -1,0 +1,243 @@
+@media only screen and(max-width: 1300px){
+    .container{
+        width: 100% ;
+        padding: 0 2%;
+    }
+}
+
+
+@media only screen and(max-width: 1190px){
+    .blog-detail-section{
+        padding-bottom: 1.5rem;
+     .blog-detail-section-container{
+         .row{
+             .col{
+                 width: 100%;
+             }
+ 
+             .text-side{
+                 padding-right: 0;
+             }
+ 
+             .featured-side{
+                 .featured-side-container{
+                     min-width: 100% !important;
+                     margin-left: 0;
+ 
+                     .search-div{
+                         width: 50%;
+                     }
+ 
+                     .articles-container{
+                         display: flex;
+                         align-items: center;
+                         flex-wrap: wrap;
+                         .article{
+                             flex-shrink: 0;
+                             width: 50%;
+                         }
+                     }
+ 
+                     .top-courses{
+                         margin-top: 2.5rem;
+ 
+                         .top-course-container{
+                             display: flex;
+                             flex-wrap: wrap;
+                             .top-course{
+                                 flex-shrink: 0;
+                                 width: 50%;
+                                 align-items: center;
+                                 padding: 2%;
+                                 &:first-of-type{
+                                     padding-left: 0;
+                                 }
+ 
+                                 &:last-of-type{
+                                     padding-left: 0;
+                                 }
+                             }
+                         }
+                     }
+                 }
+             }
+         }
+     }
+    }
+}
+
+@media only screen and(max-width: 1030px){
+    .main-heading-div{
+        .main-heading{
+            min-width: 100% !important;
+        }
+    }
+}
+
+
+
+
+@media only screen and(max-width: 850px){
+
+    .header-section{
+        .header-para-div{
+            width: 95%;
+        }
+    }
+
+    // .main-heading-div{
+    //     .main-heading{
+    //         min-width: 100% !important;
+    //     }
+    // }
+
+    .blog-hero-section{
+       padding-top: 5rem;
+    }
+
+
+//    .blog-detail-section{
+//        padding-bottom: 1.5rem;
+//     .blog-detail-section-container{
+//         .row{
+//             .col{
+//                 width: 100%;
+//             }
+
+//             .text-side{
+//                 padding-right: 0;
+//             }
+
+//             .featured-side{
+//                 .featured-side-container{
+//                     min-width: 100% !important;
+//                     margin-left: 0;
+
+//                     .search-div{
+//                         width: 50%;
+//                     }
+
+//                     .articles-container{
+//                         display: flex;
+//                         align-items: center;
+//                         flex-wrap: wrap;
+//                         .article{
+//                             flex-shrink: 0;
+//                             width: 50%;
+//                         }
+//                     }
+
+//                     .top-courses{
+//                         margin-top: 2.5rem;
+
+//                         .top-course-container{
+//                             display: flex;
+//                             flex-wrap: wrap;
+//                             .top-course{
+//                                 flex-shrink: 0;
+//                                 width: 50%;
+//                                 align-items: center;
+//                                 padding: 2%;
+//                                 &:first-of-type{
+//                                     padding-left: 0;
+//                                 }
+
+//                                 &:last-of-type{
+//                                     padding-left: 0;
+//                                 }
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+//    }
+}
+
+@media only screen and(max-width: 550px){
+
+    .header-section{
+        .header-para-div{
+            width: 95%;
+        }
+    }
+
+    .main-heading-div{
+        .main-heading{
+            min-width: 100% !important;
+        }
+    }
+
+    .blog-hero-section{
+       padding-top: 5rem;
+
+    }
+
+
+   .blog-detail-section{
+       padding-bottom: 1.5rem;
+    .blog-detail-section-container{
+        .row{
+            .col{
+                width: 100%;
+            }
+
+            .text-side{
+                padding-right: 0;
+            }
+
+            .featured-side{
+                margin-left: 0;
+                .featured-side-container{
+                    min-width: 100% !important;
+                    margin-left: 0;
+
+                    .search-div{
+                        width: 100%;
+                    }
+
+                    .articles-container{
+                        display: flex;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        .article{
+                            flex-shrink: 0;
+                            width: 100%;
+                        }
+                    }
+
+                    .top-courses{
+                        margin-top: 2.5rem;
+
+                        .top-course-container{
+                            display: flex;
+                            flex-wrap: wrap;
+                            .top-course{
+                                flex-shrink: 0;
+                                width: 100%;
+                                align-items: center;
+                                padding: 0%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+   }
+}
+
+@media only screen and(max-width: 380px){
+    .share-links-container{
+        flex-wrap: wrap;
+        .share-icons{
+            margin-top: 1.5rem;
+            flex-shrink: 0;
+            width: 100%;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+    }
+}

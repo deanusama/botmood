@@ -1,0 +1,636 @@
+/*********** Variables *************/
+/*********** Universal Styling *************/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*********** Basic Styling *************/
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1410px;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url(../Fonts/ProximaNova-Extrabold.otf);
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url(../Fonts/ProximaNova-Bold.otf);
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url(../Fonts/ProximaNova-Regular.otf);
+  font-style: normal;
+  font-weight: 400;
+}
+
+/*********** Main Section *************/
+.main-header {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.838)), to(rgba(0, 0, 0, 0.4))), url(../../Images/Home/three-persons-sitting-on-the-stairs-talking-with-each-other-1438072.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.838), rgba(0, 0, 0, 0.4)), url(../../Images/Home/three-persons-sitting-on-the-stairs-talking-with-each-other-1438072.jpg);
+  width: 100%;
+  margin-bottom: 10rem;
+  padding: 5rem 0 3rem;
+}
+
+.main-header .main-header-row .main-header-container .header-content-container {
+  width: 46%;
+}
+
+.main-header .main-header-row .main-header-container .header-content-container .main-header-heading-div {
+  margin-bottom: 2.8rem;
+}
+
+.main-header .main-header-row .main-header-container .header-content-container .main-header-heading-div .main-heading {
+  font-family: "ProximaNova";
+  font-weight: 700;
+  font-size: 3rem;
+  color: white;
+  line-height: 3.5rem;
+}
+
+.main-header .main-header-row .main-header-container .header-content-container .main-para-div .main-para {
+  font-family: "ProximaNova";
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: white;
+  line-height: 2rem;
+  font-style: italic;
+}
+
+.main-header .main-header-row .main-header-container .header-content-container .main-btn-div {
+  margin: 3.8rem 0;
+}
+
+.main-header .main-header-row .main-header-container .header-content-container .main-btn-div .main-btn {
+  border-radius: 10px;
+  padding: 1.1rem 4rem;
+  background-color: #20f384;
+  display: inline-block;
+  font-family: "ProximaNova";
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: black;
+  border: 2px solid transparent;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.main-header .main-header-row .main-header-container .header-content-container .main-btn-div .main-btn:hover {
+  border: 2px solid #20f384;
+  color: #20f384;
+  background-color: transparent !important;
+}
+
+.main-header .main-header-row .main-header-container .header-content-container .small-para-div {
+  margin-bottom: 5rem;
+}
+
+.main-header .main-header-row .main-header-container .header-content-container .small-para-div .small-para {
+  font-family: "ProximaNova";
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: white;
+  line-height: 2rem;
+}
+
+.main-header .main-header-row .main-header-container .header-content-container .main-header-icons-div {
+  padding-left: 10%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.my-course-section {
+  margin-bottom: 5.37rem;
+}
+
+.my-course-section .my-course-section-container .my-course-section-heading {
+  font-family: ProximaNova;
+  font-weight: 900;
+  font-size: 3rem;
+  margin-bottom: 5.9rem;
+}
+
+.my-course-section .flex-carousel {
+  position: relative;
+  margin-bottom: 40rem;
+}
+
+.my-course-section .flex-carousel .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  left: 25%;
+}
+
+.my-course-section .flex-carousel .flex-container .color-column-container {
+  min-height: 25.1rem;
+  width: 60%;
+  background-color: #20f384;
+  padding: 3.625rem 4rem;
+  margin: 0;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.my-course-section .flex-carousel .flex-container .color-column-container .col-heading-div {
+  margin-bottom: 2.18rem;
+}
+
+.my-course-section .flex-carousel .flex-container .color-column-container .col-heading-div .col-heading {
+  text-align: center;
+  font-family: ProximaNova;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.my-course-section .flex-carousel .flex-container .color-column-container .col-text-div {
+  margin-bottom: 2.80rem;
+}
+
+.my-course-section .flex-carousel .flex-container .color-column-container .col-text-div .col-text {
+  text-align: center;
+  font-family: ProximaNova;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.my-course-section .flex-carousel .flex-container .color-column-container .col-arrow-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.my-course-section .flex-carousel .flex-container .color-column-container .col-arrow-div img {
+  width: 3.625rem;
+  height: 1.87rem;
+}
+
+.my-course-section .flex-carousel .flex-container .color-column-container .col-arrow-div .arrow-left {
+  margin-top: -1px;
+  margin-right: 1rem;
+}
+
+.my-course-section .flex-carousel .flex-container .flex-items-container {
+  background-color: #f1f1f1;
+  padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 2rem;
+}
+
+.my-course-section .flex-carousel .flex-container .flex-items-container .flex-item {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.my-course-section .flex-carousel .flex-container .flex-items-container .flex-item .course-container {
+  min-height: 21.12rem;
+  max-width: 15.875rem;
+  background-color: #fff;
+  padding: 1rem 0.5rem;
+  border-radius: 10px;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+}
+
+.my-course-section .flex-carousel .flex-container .flex-items-container .flex-item .course-container:hover {
+  -webkit-box-shadow: 0 0rem 2.18rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0rem 2.18rem rgba(0, 0, 0, 0.15);
+}
+
+.my-course-section .flex-carousel .flex-container .flex-items-container .flex-item .course-container a {
+  color: black;
+}
+
+.my-course-section .flex-carousel .flex-container .flex-items-container .flex-item .course-container .course-img-div {
+  margin-bottom: 1.68rem;
+}
+
+.my-course-section .flex-carousel .flex-container .flex-items-container .flex-item .course-container .course-img-div img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.my-course-section .flex-carousel .flex-container .flex-items-container .flex-item .course-container .course-title-div {
+  margin-bottom: 0.93rem;
+}
+
+.my-course-section .flex-carousel .flex-container .flex-items-container .flex-item .course-container .course-title-div .course-title {
+  line-height: 1.5rem;
+  font-family: ProximaNova;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.my-course-section .flex-carousel .flex-container .flex-items-container .flex-item .course-container .course-text-div .course-text {
+  line-height: 1.2rem;
+  font-family: ProximaNova;
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: #999999;
+}
+
+.how-to-enroll-section {
+  padding: 5rem 0;
+}
+
+.how-to-enroll-section .how-to-enroll-container {
+  margin-bottom: 5.9rem;
+}
+
+.how-to-enroll-section .how-to-enroll-container .how-to-enroll-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.how-to-enroll-section .how-to-enroll-container .how-to-enroll-row .how-to-column {
+  text-align: center;
+}
+
+.how-to-enroll-section .how-to-enroll-container .how-to-enroll-row .how-to-column .how-to-enroll-heading-div .how-to-enroll-heading {
+  font-family: ProximaNova;
+  font-weight: 900;
+  font-size: 3rem;
+  width: 55%;
+  line-height: 4.5rem;
+}
+
+.how-to-enroll-section .how-to-enroll-container .how-to-enroll-row .steps-column .step-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.how-to-enroll-section .how-to-enroll-container .how-to-enroll-row .steps-column .step-container .step-number,
+.how-to-enroll-section .how-to-enroll-container .how-to-enroll-row .steps-column .step-container .step-number-2 {
+  padding: 4rem 2.87rem;
+  font-family: "ProximaNova";
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: white;
+  background-color: #865bf1;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.how-to-enroll-section .how-to-enroll-container .how-to-enroll-row .steps-column .step-container .step-number h2,
+.how-to-enroll-section .how-to-enroll-container .how-to-enroll-row .steps-column .step-container .step-number-2 h2 {
+  margin-bottom: 2rem;
+}
+
+.how-to-enroll-section .how-to-enroll-container .how-to-enroll-row .steps-column .step-container .step-number-2 {
+  background-color: #20f384;
+}
+
+.how-to-enroll-section .how-to-enroll-container .how-to-enroll-row .steps-column .step-container .step-info {
+  margin-left: 2.25rem;
+}
+
+.how-to-enroll-section .how-to-enroll-container .how-to-enroll-row .steps-column .step-container .step-info .step-info-heading {
+  font-family: "ProximaNova";
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.how-to-enroll-section .how-to-enroll-container .how-to-enroll-row .steps-column .step-container .step-info .step-info-text {
+  font-family: "ProximaNova";
+  font-weight: 400;
+  line-height: 1.5rem;
+  font-size: 1.125rem;
+}
+
+.build-your-skill-section {
+  padding-bottom: 5rem;
+}
+
+.build-your-skill-section .build-row-skill-container .skill-section-heading {
+  font-family: ProximaNova;
+  font-weight: 900;
+  font-size: 3rem;
+  margin-bottom: 5rem;
+}
+
+.build-your-skill-section .build-row-skill-container .build-your-skill-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.build-your-skill-section .build-row-skill-container .build-your-skill-row .image-column img {
+  width: 90%;
+}
+
+.build-your-skill-section .build-row-skill-container .build-your-skill-row .text-column strong {
+  display: inline-block;
+  font-size: 1.125rem;
+  color: #171426;
+  font-family: ProximaNova;
+  font-weight: 700;
+  margin-bottom: 2.8rem;
+}
+
+.build-your-skill-section .build-row-skill-container .build-your-skill-row .text-column .heading {
+  font-size: 2.25rem;
+  color: #171426;
+  font-family: ProximaNova;
+  font-weight: 700;
+}
+
+.build-your-skill-section .build-row-skill-container .build-your-skill-row .text-column .heading::after {
+  display: block;
+  content: "";
+  background-color: #28f388;
+  height: 5px;
+  width: 9rem;
+  margin-top: 1.4rem;
+  margin-bottom: 2.8rem;
+}
+
+.build-your-skill-section .build-row-skill-container .build-your-skill-row .text-column .text {
+  font-size: 1.6rem;
+  color: #999999;
+  font-family: ProximaNova;
+  font-weight: 400;
+  line-height: 2.8rem;
+}
+
+.build-your-skill-section .build-row-skill-container .build-your-skill-row .text-column .text span {
+  color: #ff9d68;
+}
+
+.more-instructors {
+  margin-bottom: 8rem;
+  padding-top: 8rem;
+}
+
+.more-instructors .more-instructors-heading-div {
+  margin-bottom: 8rem;
+}
+
+.more-instructors .more-instructors-heading-div .more-instructors-heading {
+  font-family: "ProximaNova";
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.more-instructors .more-instructors-row .crsl .crsl-container .carousel .carousel-cell {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 29%;
+  margin-right: 3rem;
+  border-radius: 5px;
+}
+
+.more-instructors .more-instructors-row .crsl .crsl-container .carousel .carousel-cell .crsl-img {
+  height: 20rem;
+}
+
+.more-instructors .more-instructors-row .crsl .crsl-container .carousel .carousel-cell .crsl-img img {
+  height: 100%;
+  display: block;
+}
+
+.more-instructors .more-instructors-row .crsl .crsl-container .carousel .carousel-cell .crsl-text {
+  width: 100%;
+  height: 20rem;
+  padding: 2rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.more-instructors .more-instructors-row .crsl .crsl-container .carousel .carousel-cell .crsl-text .paragraph-text {
+  font-size: 16px;
+  margin-left: -5rem;
+}
+
+.more-instructors .more-instructors-row .crsl .crsl-container .carousel .carousel-cell .crsl-text .secondary-heading {
+  margin-bottom: 0;
+}
+
+.more-instructors .more-instructors-row .crsl .crsl-container .carousel .carousel-cell .crsl-text .name-flag-div {
+  width: 80%;
+  margin-left: auto;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.more-instructors .more-instructors-row .crsl .crsl-container .carousel .carousel-cell .crsl-text .name-flag-div img {
+  width: 20%;
+  height: auto;
+  margin-left: 1rem;
+}
+
+.more-instructors .more-instructors-row .instructor-card {
+  max-width: 24.50rem;
+  min-height: 35.5rem;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.more-instructors .more-instructors-row .instructor-card .instructor-img {
+  height: 18rem;
+  width: 100%;
+  border-radius: 10px;
+  background-image: url(../../Images/Blog-List/2-women.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.more-instructors .more-instructors-row .instructor-card .card-text .card-title {
+  padding: 0 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.more-instructors .more-instructors-row .instructor-card .card-text .card-title h2 {
+  font-family: "ProximaNova";
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.more-instructors .more-instructors-row .instructor-card .card-text .card-skills {
+  padding: 0 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.more-instructors .more-instructors-row .instructor-card .card-text .card-skills strong {
+  font-family: "ProximaNova";
+  font-weight: 700;
+  color: #999999;
+  font-size: 1rem;
+}
+
+.more-instructors .more-instructors-row .instructor-card .card-text .card-about {
+  padding: 0 1rem;
+  margin-bottom: 1.8rem;
+}
+
+.more-instructors .more-instructors-row .instructor-card .card-text .card-about p {
+  font-family: "ProximaNova";
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.more-instructors .more-instructors-row .instructor-card .card-text .card-btn-div .card-btn {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 4.06rem;
+  background-color: #865bf1;
+  text-align: center;
+  padding-top: 1.3rem;
+  font-family: "ProximaNova";
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: white;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  border-top: 2px solid transparent;
+}
+
+.more-instructors .more-instructors-row .instructor-card .card-text .card-btn-div .card-btn:hover {
+  border-top: 2px solid #865bf1;
+  color: #865bf1;
+  background-color: #fff;
+}
+
+.Device-section {
+  position: relative;
+  margin-top: 15rem;
+  margin-bottom: 10rem;
+}
+
+.Device-section img {
+  margin-left: 8%;
+  width: 80%;
+}
+
+.Device-section .device-container {
+  position: absolute;
+  top: 18%;
+  left: 20%;
+}
+
+.Device-section .device-container .device-heading {
+  font-family: "ProximaNova";
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 5rem;
+  margin-bottom: 3rem;
+}
+
+.Device-section .device-container .device-heading span {
+  color: #20f384;
+}
+
+.Device-section .device-container .device-btn .btn-last {
+  border-radius: 10px;
+  padding: 1.1rem 4rem;
+  background-color: #20f384;
+  display: inline-block;
+  font-family: "ProximaNova";
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: black;
+  border: 2px solid transparent;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.Device-section .device-container .device-btn .btn-last:hover {
+  border: 2px solid #20f384;
+  color: #20f384;
+  background-color: transparent !important;
+}
+/*# sourceMappingURL=index.css.map */

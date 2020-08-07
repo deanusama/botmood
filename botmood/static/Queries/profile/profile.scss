@@ -1,0 +1,172 @@
+@media only screen and(max-width: 1400px){
+    .container{
+        width: 100%;
+        padding: 0 2%;
+    }
+}
+
+@media only screen and(max-width: 1250px){
+    .favorite-course-row{
+            justify-content: end !important;
+        .course-container{
+            margin-right: 2%;
+            width: 30% !important;
+            flex-grow: 1;
+            max-width: 500px;
+        }
+    }
+}
+
+@media only screen and(max-width: 870px){
+ 
+    .ball-image{
+       display: none !important;
+    }
+
+    .form-container{
+
+        form{
+            .form-group{
+                flex-wrap: wrap;
+
+                .first-name{
+                    margin-bottom: 1.8rem;
+                }
+            }
+
+            .edit-password{
+                flex-wrap: wrap;
+                strong{
+                    margin-top: 1.8rem;
+                }
+            }
+        }
+    }
+
+
+    .color-column{
+        display: none;
+    }
+
+    .other-courses-column{
+        width: 100%;
+    }
+
+}
+
+@media only screen and(max-width: 570px){
+ 
+    .edit-profile-div {
+        width: 100%;
+        .heading-and-img {
+            margin-bottom: 3.81rem;
+            padding: 0  !important;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .edit-profile-heading {
+                margin-bottom: 1.8rem;
+                font-family: ProximaNova;
+                font-weight: 900;
+                font-size: 3.75rem;
+                margin-right: 0 !important;
+            }
+    }
+    }
+
+    .page-footer{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        flex-direction: column;
+        align-items: center;
+        .copyright-text{
+            flex-wrap: 1;
+            font-size: 1.2rem;
+            color: white;
+            font-weight: 700;
+        }
+    
+        .footer-list-redesign{
+            display: flex;
+            align-items: center;
+            .footer-item{
+                list-style: none;
+                margin-right: 1rem;
+                &:last-of-type{
+                    margin-right: 0;
+                }
+                .footer-link{
+                    font-size: 1rem;
+                    color: white;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    .form-container{
+       .btn-div{
+           width: 100% !important;
+           .submit-btn{
+               width: 100% !important;
+               text-align: center;
+           }
+       }
+    }
+    
+}
+
+@media only screen and(max-width: 400px){
+
+    html{
+        font-size: 80%;
+    }
+
+    .navbar-header-redesign{
+        height: 8.25rem;
+        border-bottom: 1px solid #e1e1e1;
+            padding: 2%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .hero-text{
+                a{
+                    font-family: ProximaNova;
+                    color: black;
+                    font-weight: 900;
+                    font-size: 2rem;
+                }
+            }
+            img{
+                height: 3.3rem;
+                width: 3.3rem;
+                border-radius: 50%;
+            }
+    }
+
+ 
+    .edit-profile-div {
+        .form-container{
+            .form-group{
+                .input-div{
+                    input{
+                    margin-left: 0 !important;
+                    min-width: 320px;
+                    }
+                    width: 95% !important;
+                }
+            }
+
+            form{
+                .form-group-hidden{
+                    max-width: 320px !important;
+                
+                }
+            }
+        }
+    }
+
+}

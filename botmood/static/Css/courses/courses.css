@@ -1,0 +1,691 @@
+/*********** Variables *************/
+/*********** Universal Styling *************/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*********** Basic Styling *************/
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1410px;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url(../Fonts/ProximaNova-Extrabold.otf);
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url(../Fonts/ProximaNova-Bold.otf);
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url(../Fonts/ProximaNova-Regular.otf);
+  font-style: normal;
+  font-weight: 400;
+}
+
+/*********** Main Section *************/
+.blog-nav {
+  background-color: transparent !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  position: static !important;
+}
+
+.blog-nav .links-column a {
+  color: white !important;
+  text-shadow: 0px 1px 1px black;
+}
+
+.header-section {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../Images/Blog-List/2-women.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../Images/Blog-List/2-women.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.header-section .header-section-container {
+  height: 28.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-section .back-link-div {
+  margin-bottom: 2.3rem;
+}
+
+.header-section .back-link-div .back-link {
+  font-size: 2rem;
+  font-family: ProximaNova;
+  font-weight: 700;
+  color: white;
+}
+
+.header-section .header-heading-div {
+  margin-top: 2rem;
+  margin-bottom: 2.3rem;
+}
+
+.header-section .header-heading-div .header-heading {
+  font-family: ProximaNova;
+  font-weight: 900;
+  font-size: 3.75rem;
+  color: white;
+}
+
+.header-section .header-para-div .header-para {
+  text-align: center;
+  font-family: ProximaNova;
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: white;
+  width: 75%;
+  line-height: 2rem;
+  margin: 0 auto;
+}
+
+.popular-section {
+  margin-top: 25rem;
+}
+
+.popular-section-row .popular-section-container {
+  padding-top: 5rem;
+}
+
+.popular-section-row .popular-section-container .popular-section-heading-div {
+  margin-bottom: 4.375rem;
+}
+
+.popular-section-row .popular-section-container .popular-section-heading-div .popular-section-heading {
+  font-family: "ProximaNova";
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.popular-section-row .popular-section-container .flex-container {
+  margin-bottom: 7.255rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.popular-section-row .popular-section-container .flex-container .flex-item {
+  margin-right: 4%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 280px;
+  text-align: center;
+  border: 1px solid #999999;
+  border-radius: 10px;
+  margin-bottom: 2.6rem;
+}
+
+.popular-section-row .popular-section-container .flex-container .flex-item a {
+  font-family: "ProximaNova";
+  font-weight: 700;
+  color: #999999;
+  width: 100%;
+  display: block;
+  padding: 1.5rem 0;
+}
+
+.my-course-section {
+  margin-bottom: 9.37rem;
+}
+
+.my-course-section .my-course-section-container .my-course-section-heading-div {
+  margin-bottom: 6.56rem;
+}
+
+.my-course-section .my-course-section-container .my-course-section-heading-div .my-course-section-heading {
+  font-family: ProximaNova;
+  font-weight: 900;
+  font-size: 3.75rem;
+}
+
+.my-course-section .my-course-section-container .my-course-section-row {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  padding: 0;
+}
+
+.my-course-section .my-course-section-container .my-course-section-row .col {
+  margin: 0;
+}
+
+.my-course-section .my-course-section-container .my-course-section-row .color-column {
+  padding-right: 2rem;
+}
+
+.my-course-section .my-course-section-container .my-course-section-row .color-column .color-column-container {
+  min-height: 23.48rem;
+  background-color: #20f384;
+  padding: 3.625rem 4rem;
+  margin: 0;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.my-course-section .my-course-section-container .my-course-section-row .color-column .color-column-container .col-heading-div {
+  margin-bottom: 2.18rem;
+}
+
+.my-course-section .my-course-section-container .my-course-section-row .color-column .color-column-container .col-heading-div .col-heading {
+  text-align: center;
+  font-family: ProximaNova;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.my-course-section .my-course-section-container .my-course-section-row .color-column .color-column-container .col-text-div {
+  margin-bottom: 2.80rem;
+}
+
+.my-course-section .my-course-section-container .my-course-section-row .color-column .color-column-container .col-text-div .col-text {
+  text-align: center;
+  font-family: ProximaNova;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.my-course-section .my-course-section-container .my-course-section-row .color-column .color-column-container .col-arrow-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.my-course-section .my-course-section-container .my-course-section-row .color-column .color-column-container .col-arrow-div img {
+  width: 3.625rem;
+  height: 1.87rem;
+}
+
+.my-course-section .my-course-section-container .my-course-section-row .color-column .color-column-container .col-arrow-div .arrow-left {
+  margin-top: -1px;
+  margin-right: 1rem;
+}
+
+.my-course-section .my-course-section-container .my-course-section-row .other-courses-column .other-courses-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.my-course-section .my-course-section-container .my-course-section-row .other-courses-column .other-courses-row .course-column {
+  padding: 1rem 1rem 1rem 0;
+}
+
+.my-course-section .my-course-section-container .my-course-section-row .other-courses-column .other-courses-row .course-column:last-of-type {
+  padding-right: 0;
+}
+
+.my-course-section .my-course-section-container .my-course-section-row .other-courses-column .other-courses-row .course-column .course-container {
+  max-width: 15.875rem;
+  min-height: 21.12rem;
+  background-color: #fff;
+  padding: 1rem 0.5rem;
+  border-radius: 10px;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+}
+
+.my-course-section .my-course-section-container .my-course-section-row .other-courses-column .other-courses-row .course-column .course-container:hover {
+  -webkit-box-shadow: 0 0rem 2.18rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0rem 2.18rem rgba(0, 0, 0, 0.15);
+}
+
+.my-course-section .my-course-section-container .my-course-section-row .other-courses-column .other-courses-row .course-column .course-container a {
+  color: black;
+}
+
+.my-course-section .my-course-section-container .my-course-section-row .other-courses-column .other-courses-row .course-column .course-container .course-img-div {
+  margin-bottom: 1.68rem;
+}
+
+.my-course-section .my-course-section-container .my-course-section-row .other-courses-column .other-courses-row .course-column .course-container .course-img-div img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.my-course-section .my-course-section-container .my-course-section-row .other-courses-column .other-courses-row .course-column .course-container .course-title-div {
+  margin-bottom: 0.93rem;
+}
+
+.my-course-section .my-course-section-container .my-course-section-row .other-courses-column .other-courses-row .course-column .course-container .course-title-div .course-title {
+  line-height: 1.5rem;
+  font-family: ProximaNova;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.my-course-section .my-course-section-container .my-course-section-row .other-courses-column .other-courses-row .course-column .course-container .course-text-div .course-text {
+  line-height: 1.2rem;
+  font-family: ProximaNova;
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: #999999;
+}
+
+.more-instructors {
+  margin-bottom: 8rem;
+}
+
+.more-instructors .more-instructors-heading-div {
+  margin-bottom: 3.75rem;
+}
+
+.more-instructors .more-instructors-heading-div .more-instructors-heading {
+  font-family: "ProximaNova";
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.more-instructors .more-instructors-row .crsl .crsl-container .carousel .carousel-cell {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 29%;
+  margin-right: 3rem;
+  border-radius: 5px;
+}
+
+.more-instructors .more-instructors-row .crsl .crsl-container .carousel .carousel-cell .crsl-img {
+  height: 20rem;
+}
+
+.more-instructors .more-instructors-row .crsl .crsl-container .carousel .carousel-cell .crsl-img img {
+  height: 100%;
+  display: block;
+}
+
+.more-instructors .more-instructors-row .crsl .crsl-container .carousel .carousel-cell .crsl-text {
+  width: 100%;
+  height: 20rem;
+  padding: 2rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.more-instructors .more-instructors-row .crsl .crsl-container .carousel .carousel-cell .crsl-text .paragraph-text {
+  font-size: 16px;
+  margin-left: -5rem;
+}
+
+.more-instructors .more-instructors-row .crsl .crsl-container .carousel .carousel-cell .crsl-text .secondary-heading {
+  margin-bottom: 0;
+}
+
+.more-instructors .more-instructors-row .crsl .crsl-container .carousel .carousel-cell .crsl-text .name-flag-div {
+  width: 80%;
+  margin-left: auto;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.more-instructors .more-instructors-row .crsl .crsl-container .carousel .carousel-cell .crsl-text .name-flag-div img {
+  width: 20%;
+  height: auto;
+  margin-left: 1rem;
+}
+
+.more-instructors .more-instructors-row .instructor-card {
+  max-width: 24.50rem;
+  min-height: 35.5rem;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.more-instructors .more-instructors-row .instructor-card .instructor-img {
+  height: 18rem;
+  width: 100%;
+  border-radius: 10px;
+  background-image: url(../../Images/Blog-List/2-women.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.more-instructors .more-instructors-row .instructor-card .card-text .card-title {
+  padding: 0 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.more-instructors .more-instructors-row .instructor-card .card-text .card-title h2 {
+  font-family: "ProximaNova";
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.more-instructors .more-instructors-row .instructor-card .card-text .card-skills {
+  padding: 0 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.more-instructors .more-instructors-row .instructor-card .card-text .card-skills strong {
+  font-family: "ProximaNova";
+  font-weight: 700;
+  color: #999999;
+  font-size: 1rem;
+}
+
+.more-instructors .more-instructors-row .instructor-card .card-text .card-about {
+  padding: 0 1rem;
+  margin-bottom: 1.8rem;
+}
+
+.more-instructors .more-instructors-row .instructor-card .card-text .card-about p {
+  font-family: "ProximaNova";
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.more-instructors .more-instructors-row .instructor-card .card-text .card-btn-div .card-btn {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 4.06rem;
+  background-color: #865bf1;
+  text-align: center;
+  padding-top: 1.3rem;
+  font-family: "ProximaNova";
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: white;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  border-top: 2px solid transparent;
+}
+
+.more-instructors .more-instructors-row .instructor-card .card-text .card-btn-div .card-btn:hover {
+  border-top: 2px solid #865bf1;
+  color: #865bf1;
+  background-color: #fff;
+}
+
+.courses-section .filters-row {
+  margin-bottom: 4.75rem;
+}
+
+.courses-section .filters-row .filters-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.courses-section .filters-row .filters-container .course-category-div .course-category {
+  font-family: ProximaNova;
+  font-weight: 700;
+  color: black;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+}
+
+.courses-section .filters-row .filters-container .number-of-courses-div .number-of-courses {
+  font-family: "ProximaNova";
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.courses-section .courses-row .filter-column {
+  padding-right: 1.87rem;
+}
+
+.courses-section .courses-row .filter-column .content-container .subcategory-heading-div {
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.courses-section .courses-row .filter-column .content-container .subcategory-heading-div .subcategory {
+  font-size: 1.125rem;
+  font-family: ProximaNova;
+  font-weight: 700;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.courses-section .courses-row .filter-column .content-container .category-div {
+  margin-bottom: 0.5rem;
+}
+
+.courses-section .courses-row .filter-column .content-container .category-div .category {
+  width: 100%;
+  display: block;
+}
+
+.courses-section .courses-row .filter-column .content-container .category-div .category a {
+  padding: 0.5rem;
+  padding-left: 1rem;
+  font-family: "ProximaNova";
+  color: #394649;
+  display: block;
+  border-radius: 2px;
+}
+
+.courses-section .courses-row .filter-column .content-container .category-div .category a:hover {
+  background-color: rgba(153, 153, 153, 0.18);
+}
+
+.courses-section .courses-row .courses-column .courses-column-container .course-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 5rem;
+}
+
+.courses-section .courses-row .courses-column .courses-column-container .course-container .course-img {
+  margin-right: 1rem;
+}
+
+.courses-section .courses-row .courses-column .courses-column-container .course-container .course-img img {
+  width: 17.25rem;
+  height: 12.56rem;
+  display: block;
+  border-radius: 10px;
+}
+
+.courses-section .courses-row .courses-column .courses-column-container .course-container .course-context {
+  width: 100%;
+  border-bottom: 1px solid #999999;
+  padding-bottom: 3rem;
+  padding-left: 1.5rem;
+}
+
+.courses-section .courses-row .courses-column .courses-column-container .course-container .course-context .course-heading-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.courses-section .courses-row .courses-column .courses-column-container .course-container .course-context .course-heading-price .course-heading {
+  font-family: "ProximaNova";
+  font-weight: 700;
+}
+
+.courses-section .courses-row .courses-column .courses-column-container .course-container .course-context .course-heading-price .course-heading h2 {
+  font-size: 1.875rem;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.courses-section .courses-row .courses-column .courses-column-container .course-container .course-context .course-heading-price .course-heading h2 span {
+  margin-left: 1rem;
+  font-size: 1.12rem;
+  color: white;
+  padding: 0.6rem 0.8rem;
+  background-color: #20f384;
+  border-radius: 10px;
+}
+
+.courses-section .courses-row .courses-column .courses-column-container .course-container .course-context .course-heading-price .course-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "ProximaNova";
+}
+
+.courses-section .courses-row .courses-column .courses-column-container .course-container .course-context .course-heading-price .course-price .price-cancelled {
+  margin: 0 1rem;
+  font-weight: 400;
+  color: #999999;
+  text-decoration: line-through;
+  font-size: 1.87rem;
+}
+
+.courses-section .courses-row .courses-column .courses-column-container .course-container .course-context .course-heading-price .course-price .current-price {
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+.courses-section .courses-row .courses-column .courses-column-container .course-container .course-context .course-description-div {
+  margin-bottom: 1.18rem;
+}
+
+.courses-section .courses-row .courses-column .courses-column-container .course-container .course-context .course-description-div .course-description {
+  font-family: "ProximaNova";
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.6rem;
+}
+
+.courses-section .courses-row .courses-column .courses-column-container .course-container .course-context .course-authors-div {
+  margin-bottom: 1.37rem;
+}
+
+.courses-section .courses-row .courses-column .courses-column-container .course-container .course-context .course-authors-div .authors {
+  font-family: "ProximaNova";
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+.courses-section .courses-row .courses-column .courses-column-container .course-container .course-context .course-authors-div .authors a {
+  color: #999999;
+}
+
+.courses-section .courses-row .courses-column .courses-column-container .course-container .course-context .course-duration strong {
+  font-family: "ProximaNova";
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.courses-section .browse-more-row {
+  text-align: center;
+}
+
+.courses-section .browse-more-row .browse-more-btn {
+  outline: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.courses-section .browse-more-row .browse-more-btn .browse-more-heading {
+  font-family: ProximaNova;
+  font-weight: 700;
+  font-size: 1.125rem;
+  text-align: center;
+  padding-bottom: 6.18rem;
+  color: #999999;
+}
+/*# sourceMappingURL=courses.css.map */

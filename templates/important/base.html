@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BotMood</title>
+    <script src="https://kit.fontawesome.com/bd33e4cb7c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/Css/Home/index.css?{% now "U" %}">
+    <link rel="stylesheet" href="/static/Css/General/Grid.css?{% now "U" %}">
+    <link rel="stylesheet" href="/static/Css/General/general.css?{% now "U" %}">
+    <link rel="stylesheet" href="/static/Css/General/flickity.css?{% now "U" %}">
+    <link rel="stylesheet" href="/static/Queries/general/general.css?{% now "U" %}">
+    <link rel="stylesheet" href="/static/Queries/home/home.css?{% now "U" %}">
+
+    <!-- Course Detail -->
+
+    {% comment %} <link rel="stylesheet" href="/static/Css/course-Detail/course-detail.css?{% now "U" %}"> {% endcomment %}
+    <link rel="stylesheet" href="/static/Css/General/Grid.css?{% now "U" %}">
+    <link rel="stylesheet" href="/static/Css/General/general.css?{% now "U" %}">
+    <link rel="stylesheet" href="/static/Css/General/flickity.css?{% now "U" %}">
+    <link rel="stylesheet" href="/static/Queries/general/general.css?{% now "U" %}">
+    <link rel="stylesheet" href="/static/Queries/courses/courses.css?{% now "U" %}">
+    <link rel="stylesheet" href="/static/Queries/course-detail/course-detail.css?{% now "U" %}">
+
+    <!-- Instructor Detail -->
+
+
+    <link rel="stylesheet" href="/static/Css/instructor/instructor.css?{% now "U" %}">
+    <link rel="stylesheet" href="/static/Queries/instructors/instructors.css?{% now "U" %}">
+
+
+    <link rel="stylesheet" href="/static/Css/blog-list/blog-list.css?{% now "U" %}">
+    <link rel="stylesheet" href="/static/Queries/blogList/blog-list.css?{% now "U" %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+    <link rel="stylesheet" href="/static/Css/blog-detail/detail.css?{% now "U" %}">
+    <link rel="stylesheet" href="/static/Css/General/Grid.css?{% now "U" %}">
+    <link rel="stylesheet" href="/static/Css/General/general.css?{% now "U" %}">
+    <link rel="stylesheet" href="/static/Queries/general/general.css?{% now "U" %}">
+    <link rel="stylesheet" href="/static/Queries/blog-detail/detail.css?{% now "U" %}">
+
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- Navbar Starts Here -->
+ <header class="navbar-header">
+        <div class="container">
+            <div class="row navbar-header__row">
+                <div class="col links-column">
+                    <div class="burger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                    <div class="hero">
+                        <h2 class="hero-text">
+                            <a href="{% url 'home' %}" class="hero-link">BotMood</a>
+                        </h2>
+                    </div>
+                    <nav class="main-nav">
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="{% url 'blog-list' %}" class="nav-link">Blog</a></li>
+                            <li class="nav-item"><a href="{% url 'about_us' %}" class="nav-link">About</a></li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link hidden-link submenu-activator">
+                                    Profile
+                                    <i class="fas fa-chevron-down"></i>
+                                </a>
+                                {% comment %} <ul class="profile-submenu-hidden sub-hidden">
+                                    <li class="submenuitem"><a href="#" class="submenu-link">Edit Profile</a></li>
+                                    <li class="submenuitem"><a href="#" class="submenu-link">Help</a></li>
+                                    <li class="submenuitem"><a href="#" class="submenu-link">Edit Profile</a> </li>
+                                    <li class="submenuitem"><a href="#" class="submenu-link">Log out</a></li>
+                                </ul> {% endcomment %}
+                            </li>
+                            {% comment %} <li class="nav-item"><a href="#" class="nav-link hidden-link">Notification</a></li> {% endcomment %}
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col id-column">
+                    <div class="id-column__links">
+                    <ul class="id-list">
+                                <li class="id-item"><a class="id-link"><i class="fas fa-search"></i></a></li>
+                    </ul>
+                        {% comment %} {% if request.user.is_authenticated %}
+
+                            <ul class="id-list">
+                                <li class="id-item"><a href="#" class="id-link notification-icon"><i class="far fa-bell"></i></a></li>
+                                <li class="id-item profile-icon"><a href="#" class="id-link"><img src="{% static '/Images/header/man-young-happy-smiling-91227.jpg' %}" alt=""></a></li>
+                                <ul class="profile-submenu">
+                                    <div class="profile-menu-content">
+                                        <div class="email-info">
+                                            <a href="#">
+                                                <img src="../Images/header/man-young-happy-smiling-91227.jpg" alt="">
+                                            <div class="name-email">
+                                                <strong class="name">
+                                                    John Cena
+                                                </strong>
+                                                <p>
+                                                    john@cena.com
+                                                </p>
+                                            </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="other-links">
+                                            <a href="#" class="myCourses">
+                                                My Courses
+                                            </a>
+                                            <a href="#" class="profile-link">
+                                                Edit Profile
+                                            </a>
+                                            <a href="#" class="Notifications">
+                                                Notifications
+                                            </a>
+                                        </div>
+
+                                        <div class="log-out">
+                                            <a href="#" class="help-link">
+                                                Help
+                                            </a>
+                                            <a href="{% url 'logout' %}" class="log-out-link">
+                                                Log Out
+                                            </a>
+                                        </div>
+
+                                        <div class="blog-link-div">
+                                            <a href="#" class="blog-link">
+                                                <div class="blog-about">
+                                                    <strong class="blog-name">
+                                                        Two Beauties Sitting on Beach
+                                                    </strong>
+                                                    <p class="blog-about">
+                                                        Lorem ipsum dolor sit amet.
+                                                    </p>
+                                                </div>
+
+                                                <i class="fas fa-external-link-alt"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </ul>
+                        
+                        {% else %}
+
+
+                            <li class="nav-item"><a href="{% url 'login' %}" class="nav-link">Login</a></li>
+                            <li class="nav-item"><a href="{% url 'signup' %}" class="nav-link">SignUp</a></li>
+
+
+                        {% endif %} {% endcomment %}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Search Container -->
+        <div class="search-row-container row collapsed">
+            <div class="search-row">
+                <div class="container search-container">
+                    <div class="content-container">
+                        <div class="input-div">
+                            <i class="fas fa-search"></i>
+                        <form action="{% url 'search' %}" method="GET">
+                            <input type="text" class="search-input" name="query" id="search" placeholder="eg. Python, C++, Javascript" autofocus name="search-here">
+                            <i></i>
+                        </form>
+                        </div> 
+                        
+                        <div class="suggestions-div">
+                            <strong class="suggestion-text">
+                                Suggestion:
+                            </strong>
+                            <ul class="suggestion-list">
+                                <li class="suggestion-item">PHP,</li>
+                                <li class="suggestion-item">Games,</li>
+                                <li class="suggestion-item">Javascript,</li>
+                                <li class="suggestion-item">Tech</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="empty-container hidden-container">
+
+            </div>
+        </div>
+    </header>
+<!-- Navbar Ends Here -->
+
+ {% block content %}
+ {% endblock content %}
+
+
+
+  
+
+   
+
+       
+</body>
+</html>

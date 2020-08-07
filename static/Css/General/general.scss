@@ -1,0 +1,460 @@
+/*********** Variables *************/
+// Color Variables
+$link-color: black;
+
+
+
+
+
+/*********** Universal Styling *************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/*********** Basic Styling *************/
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1410px;
+}
+
+@font-face {
+    font-family: "ProximaNova";
+    src: url(../Fonts/ProximaNova-Extrabold.otf);
+    font-style: normal;
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "ProximaNova";
+    src: url(../Fonts/ProximaNova-Bold.otf);
+    font-style: normal;
+    font-weight: 700;
+}
+
+/*********** Navbar Styling *************/
+.navbar-header {
+    box-shadow: 0px 12px 9px rgba(0, 0, 0, 0.04);
+    background-color: #fff;
+    position: sticky;
+    top: 0px;
+    z-index: 99;
+    transition: all 0.3s;
+    width: 100%;
+
+    &__row {
+        height: 8.25rem;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid transparent;
+
+
+        .links-column {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 56%;
+
+            .burger{
+                display: none;
+                
+                div{
+                    transition: all 0.3s;
+                    height: 2px;
+                    width: 25px;
+                    margin-bottom: 5px;
+                    background-color: #000000;
+                }
+
+                .line2{
+                    width: 20px;
+                }
+
+                .line3{
+                    margin-bottom: 0;
+                }
+            }
+
+            .hero-text {
+                .hero-link {
+                    font-family: ProximaNova;
+                    color: $link-color;
+                    font-weight: 900;
+                    font-size: 2rem;
+                }
+            }
+
+            .main-nav {
+                width: 60%;
+
+                .nav-list {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    list-style: none;
+
+                    .nav-item {
+                        .fa-chevron-down{
+                            font-size: 1.2rem;
+                            color: black;
+                            margin-left: 75%;
+                        }
+                        .nav-link {
+                            color: $link-color;
+                            font-size: 1.15rem;
+                            font-family: ProximaNova;
+                            font-weight: 700;
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                        }
+
+                        .hidden-link{
+                            display: none;
+                        }
+
+                        .profile-submenu-hidden{
+                            transition:overflow 0.3s;
+                            margin: 10%;
+                            list-style: none;
+                            .submenuitem{
+                                margin-top: 1.5rem;
+                                margin-bottom: 1.5rem;
+                            }
+                            .submenu-link{
+                                font-family: ProximaNova;
+                                color: black;
+                                font-weight: 700;
+                                font-size: 1.125rem;
+                            }
+                        }
+
+                        .sub-hidden{
+                            height: 0;
+                            overflow: hidden;
+                            margin: 0;
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .id-column {
+            width: 44%;
+
+            .id-column__links {
+                display: flex;
+                align-items: center;
+
+                .id-list {
+                    margin-left: auto;
+                    list-style: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 30%;
+                    // position: relative;
+
+                    .id-item {
+                        .fa-search{
+                            cursor: pointer;
+                        }
+                        .id-link {
+                            color: #20f384;
+                            font-size: 1.56rem;
+                            img {
+                                border-radius: 50%;
+                                height: 3.3rem;
+                                width: 3.3rem;
+                            }
+                        }
+                    }
+
+                    .profile-icon{
+                        height: 5.25rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;;
+                        &:hover ~{
+                            // display: none;
+                            .profile-submenu{
+                                display: block !important;
+                            }
+                        }
+                    }
+
+                    .profile-submenu{
+                        min-width: 290px;
+                        display: none;
+                        position: absolute;
+                        top: 6.7rem;
+                        right: 12%;
+                        border-radius: 5px;
+                        background-color: #fff;
+                        box-shadow: 0 2px 4px rgba(0,0,0,.05),0 4px 12px rgba(0,0,0,.05);
+                        font-family: ProximaNova;
+                        border: 1px solid #e1e1e1;
+                        .profile-menu-content{
+                            a:hover{
+                                color: #ff9d68 !important;
+                            }
+                            .email-info{
+                                border-bottom: 1px solid #e1e1e1;
+                                padding: 2rem 1rem;
+                                a{
+                                    font-family: "ProximaNova";
+                                    display: flex;
+                                align-items: center;
+                                }
+                                img{
+                                    border-radius: 50%;
+                                    height: 3.3rem;
+                                    width: 3.3rem;
+                                    margin-right: 2rem;
+                                }
+
+                                .name-email{
+                                    .name{
+                                        font-family: "ProximaNova";
+                                        font-size: 1rem;
+                                        font-weight: 700;
+                                        margin-bottom: 1rem;
+                                        color: black;
+                                    }
+                                    p{
+                                        font-size: 1rem;
+                                        font-weight: 400;
+                                        color: #999;
+                                    }
+                                }
+                            }
+
+                            .other-links{
+                                border-bottom: 1px solid #e1e1e1;
+                                padding:2rem 1rem;
+                                a{
+                                    font-family: "ProximaNova";
+                                    font-size: 1rem;
+                                    font-weight: 400;
+                                    color: black;
+                                    display: block;
+                                }
+
+                                .profile-link{
+                                    margin: 2rem 0;
+                                }
+                            }
+
+                            .log-out{
+                                border-bottom: 1px solid #e1e1e1;
+                                padding:2rem 1rem;
+                                a{
+                                    font-family: "ProximaNova";
+                                    font-size: 1rem;
+                                    font-weight: 400;
+                                    color: black;
+                                    display: block;
+                                }
+
+                                .help-link{
+                                    margin-bottom: 2rem;
+                                }
+                            }
+
+                            .blog-link-div{
+                                .blog-link{
+                                    color: black;
+                                    display: flex;
+                                    align-items: center;
+                                    font-family: ProximaNova;
+                                    padding: 2rem 1rem;
+                                    .blog-name{
+                                        color: black;
+                                    }
+                                    
+                                    .blog-about{
+                                        margin-top: 0.5rem;
+                                        color: #999;
+                                    }
+
+                                    .fas{
+                                        margin-left: 2rem;
+                                        color: black;
+                                        font-size: 1.5rem;
+                                    }
+                                }
+
+                            }
+                        }
+
+                        &:hover{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .row-bordered{
+        border-bottom: 1px solid #999999;
+    }
+
+    // Search Container Starts Here
+
+    .collapsed{
+        padding: 0 !important;
+        overflow: hidden;
+        opacity: 0 !important;
+        visibility: hidden;
+    }
+
+    .search-row-container {
+        z-index: 999;
+        transition: all 0.2s;
+        opacity: 1;
+        position: absolute;
+        top: auto;
+        height: 89vh;
+        width: 100%;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+
+        .search-row {
+            min-height: 7.375rem;
+            background-color: white;
+
+            .search-container {
+                padding-left: 17%;
+                padding-top: 2.6rem;
+                padding-bottom: 1.6875rem;
+                .input-div {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 2.6rem;
+                    .fas{
+                        margin-right: 3%;
+                        font-size: 2rem;
+                    }
+                    .search-input {
+                        outline: none;
+                        width: 45%;
+                        font-family: ProximaNova;
+                        font-weight: 700;
+                        font-size: 2rem;
+                        color: #000;
+                        background: none;
+                        border: none;
+                    }
+
+                    ::placeholder {
+                        color: #ccc;
+
+                    }
+                    -webkit-appearance: none !important;
+                }
+
+                .suggestions-div {
+                    padding-left: 5%;
+                    display: flex;
+                    align-items: center;
+                    .suggestion-text {
+                        font-family: "ProximaNova";
+                        font-weight: 700;
+                        font-size: 1.2rem;
+                        color: #999999;
+                        margin-right: 2.125rem;
+                    }
+                    .suggestion-list{
+                        display: flex;
+                        align-items: center;
+                        list-style: none;
+                        .suggestion-item{
+                            margin-right: 2.56rem;
+                            &:last-of-type{
+                                margin-right: 0;
+                            }
+                            .suggestion-link{
+                                color: #000;
+                                font-family: "ProximaNova";
+                                font-weight: 700;
+                                font-size: 1.125rem;
+                                transition: color 0.3s;
+                                &:hover{
+                                    color: #ff9d68;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .empty-container{
+        height: 100%;
+        display: block;
+    }
+    
+    .hidden-container{
+        display: none;
+    }
+}
+
+
+
+/*********** Footer Styling *************/
+.page-footer {
+    background-color: #171426;
+    height: 7.56rem;
+    display: flex;
+    align-items: center;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .copyright-text-div {
+            .copyright-text {
+                font-family: ProximaNova;
+                font-weight: 700;
+                color: white;
+                font-size: 1.15rem;
+            }
+        }
+
+        .footer-links-div {
+            width: 18.79%;
+
+            .footer-list {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                list-style: none;
+
+                .footer-link {
+                    color: white;
+                    font-family: ProximaNova;
+                    font-weight: 700;
+                    color: white;
+                    font-size: 1.15rem;
+                }
+            }
+        }
+    }
+}

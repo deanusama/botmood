@@ -1,0 +1,1178 @@
+{% include 'important/base.html' %}
+{% block content %}
+{% load static %}
+
+    <!-- Section Starts Here -->
+    <div class="header-section">
+        <div class="container header-section-container">
+
+            <div class="header-text-container">
+                <div class="header-heading-div">
+                    <h1 class="header-heading">
+
+                        {{detail_page.title}} mint read = {{mint_read}}
+
+                    </h1>
+                </div>
+    
+                <div class="header-para-div">
+                    <p class="header-para">
+                        {{detail_page.short_description}}
+                    </p>
+                </div>
+    
+                <div class="header-btn-div">
+                    <a href="#" class="btn-link">
+                        Enroll Today
+                    </a>
+                    <span>
+                        $45
+                    </span>
+                </div>
+            </div>
+
+            <div class="mobile-img">
+                <img src="{% static '/Images/Course-detail/zoom.png' %}" alt="">
+            </div>
+
+        </div>
+    </div>
+
+    <section class="course-description-section">
+        <div class="course-description-container container">
+            <div class="course-description-row flex-container">
+                <div class="flex-item description-column">
+                    <div class="description-content-container">
+                        <div class="description-content">
+                            <div class="course-description-heading-div">
+                                <h1 class="course-description-heading">
+                                    {{detail_page.title}}
+                                </h1>
+                                <div class="like-div">
+                                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="bookmark"
+                                        class="svg-inline--fa fa-bookmark fa-w-12" role="img"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                        <path fill="currentColor"
+                                            d="M336 0H48C21.49 0 0 21.49 0 48v464l192-112 192 112V48c0-26.51-21.49-48-48-48zm0 428.43l-144-84-144 84V54a6 6 0 0 1 6-6h276c3.314 0 6 2.683 6 5.996V428.43z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="course-intro-div">
+                                <p class="course-intro">
+                                    Explore a career as a software Engineer. Learn The basic of Programming and software
+                                    Development
+                                </p>
+                            </div>
+
+                            <div class="course-authors">
+                                <div class="author-images-div">
+                                <img src="../Images/header/man-young-happy-smiling-91227.jpg" alt="">
+                                    <img src="{{ detail_page.topauthor.profile.url }}" alt="" class="img1">
+                                    <div class="more-author">{{ detail_page.more_instructor }}+</div>
+                                </div>
+
+                                <div class="share-icon">
+                                    <i class="fas fa-share-alt popup-btn" id="myBtn"></i>
+                                    <p class="share-text">
+                                        Share
+                                    </p>
+
+                                    <!-- The Modal -->
+                                    <div class="modal" id="myModal">
+
+                                        <!-- Modal content -->
+                                        <div class="modal-content">
+                                            <div class="title-cross">
+                                                <span class="close">&times;</span>
+                                                <strong>Share This Course</strong>
+                                            </div>
+                                        
+                                            <div class="sidebar3">
+                                                <div class="hidden-div">
+                                                    <div class="heading">
+                                                        <h3>
+                                                            Share This Course, Get Free Months
+                                                        </h3>
+                                                    </div>
+                                                    <div class="text">
+                                                        <p>
+                                                            Invite your friends to try Premium Membership free for 2 months. Earn one free month for each friend who signs up.
+                                                        </p>
+                                                    </div>
+                                                    <div class="icons">
+                                                        <a href="#">
+                                                        <i class="fab fa-facebook-square"></i>
+                                                        </a>
+                                                        <a href="#">
+                                                        <i class="fab fa-twitter-square"></i>
+                                                        </a>
+                                                        <a href="#">
+                                                        <i class="fab fa-linkedin"></i>
+                                                        </a>
+                                                    </div>
+                                                    <!-- <div class="or">
+                                                        <strong>or</strong>
+                                                    </div> -->
+                                                    <div class="copy-text">
+                                                        <p class="text-to-be-copied" id="link_Copied">
+                                                            https://www.google.com
+                                                        </p>
+                                                    </div>
+                                                    <div class="copy-btn">
+                                                        <button>
+                                                            Copy Link
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="price-start">
+                                    <h2 class="price">
+                                        $29
+                                    </h2>
+                                    <a href="#" class="start-btn">
+                                        Enroll Today
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="course-description-div">
+                                <p class="course-description">
+                                    {{detail_page.Content | safe }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="learn-container">
+                        <div class="learn-heading-div">
+                            <h1 class="learn-heading">
+                                What You Learn ?
+                            </h1>
+                        </div>
+                        <div class="learn-tags-container">
+                            <ul class="flex-container">
+                                <li class="flex-item"> <span></span> How to design</li>
+                                <li class="flex-item"> <span></span> Design Principle</li>
+                                <li class="flex-item"> <span></span> Color Theory</li>
+                                <li class="flex-item"> <span></span> Rules of Modification</li>
+                                <li class="flex-item"> <span></span> Modern Design Patterns</li>
+                            </ul>
+                        </div>
+                    </div> -->
+
+                    <div class="skills-content-container">
+                        <div class="skills-heading-div">
+                            <h1 class="skills-heading">
+                                What Skills You will Gain ?
+                            </h1>
+                        </div>
+            
+                        <div class="skill-tags-container">
+                            <div class="skill-tags-div">
+
+
+                                {% if detail_page.skill %}
+                                <div class="skill-tag-div">
+                                    <div class="skill-tag">
+                                        <span>{{detail_page.skill}}</span>
+                                    </div>
+                                </div>
+                            {% endif %}
+
+                            {% if detail_page.skill2 %}
+                                <div class="skill-tag-div">
+                                    <div class="skill-tag">
+                                        <span>{{detail_page.skill2}}</span>
+                                    </div>
+                                </div>
+                            {% endif %}
+
+                            {% if detail_page.skill3 %}
+                                <div class="skill-tag-div">
+                                    <div class="skill-tag">
+                                        <span>{{detail_page.skill3}}</span>
+                                    </div>
+                                </div>
+                            {% endif %}
+
+                            {% if detail_page.skill4 %}
+                                <div class="skill-tag-div">
+                                    <div class="skill-tag">
+                                        <span>{{detail_page.skill4}}</span>
+                                    </div>
+                                </div>
+                            {% endif %}
+
+                            {% if detail_page.skill5 %}
+                                <div class="skill-tag-div">
+                                    <div class="skill-tag">
+                                        <span>{{detail_page.skill5}}</span>
+                                    </div>
+                                </div>
+                            {% endif %}
+
+                            {% if detail_page.skill6 %}
+                                <div class="skill-tag-div">
+                                    <div class="skill-tag">
+                                        <span>{{detail_page.skill6}}</span>
+                                    </div>
+                                </div>
+                            {% endif %}
+
+                            {% if detail_page.skill7 %}
+                                <div class="skill-tag-div">
+                                    <div class="skill-tag">
+                                        <span>{{detail_page.skill7}}</span>
+                                    </div>
+                                </div>
+                            {% endif %}
+
+                            {% if detail_page.skill8 %}
+                                <div class="skill-tag-div">
+                                    <div class="skill-tag">
+                                        <span>{{detail_page.skill8}}</span>
+                                    </div>
+                                </div>
+                            {% endif %}
+
+                            {% if detail_page.skill9 %}
+                                <div class="skill-tag-div">
+                                    <div class="skill-tag">
+                                        <span>{{detail_page.skill9}}</span>
+                                    </div>
+                                </div>
+                            {% endif %}
+
+                            {% if detail_page.skill10 %}
+                                <div class="skill-tag-div">
+                                    <div class="skill-tag">
+                                        <span>{{detail_page.skill10}}</span>
+                                    </div>
+                                </div>
+                            {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="flex-item side-column">
+                    <div class="sidebar1">
+                        <div class="course-level-and-duration">
+                            <div class="course-level">
+                                <h3>Bootcamp</h3>
+                            </div>
+                            <div class="course-duration">
+                                <p>{{detail_page.week}} Weeks</p>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-course-content">
+                            <strong>Includes</strong>
+                            <div class="content">
+                                <p>
+                                    <span class="span1">Technical Literacy, </span><span class="span2"> Career Overview,
+                                    </span><span class="span3"> Programming Concepts,</span> and more.....
+                                </p>
+                            </div>
+                            <div class="experience-requirement">
+                                <strong>Experience</strong>
+                                <h3>{{detail_page.experience_level}} Welcome</h3>
+                            </div>
+                        </div>
+
+                        <div class="who-needs-this-course">
+                            <strong>For those Who want to</strong>
+                            <ul>
+
+                                {% if detail_page.who_want_to %}
+                                    <li>{{detail_page.who_want_to}}</li>
+                                {% endif %}
+
+                                {% if detail_page.who_want_to2 %}
+                                    <li>{{detail_page.who_want_to2}}</li>
+                                {% endif %}
+
+                                {% if detail_page.who_want_to3 %}
+                                    <li>{{detail_page.who_want_to3}}</li>
+                                {% endif %}
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="what-you-learn">
+        <div class="what-you-learn-container">
+            <div class="course-content">
+                <h1 class="course-content-heading">
+                    What You Will Learn ?
+                </h1>
+                <div class="course-content-blocks">
+
+
+
+                {% if detail_page.learning_content_heading %}
+                    <div class="course-content-block">
+                        <strong class="content-number">
+                            1
+                        </strong>
+                        <div>
+                            <h2 class="content-name">
+                                {{detail_page.learning_content_heading}}
+                            </h2>
+                            <p class="content-description">
+                                {{detail_page.learning_content_detail}}                       </p>
+                        </div>
+                    </div>
+
+                {% endif %}
+
+
+
+                {% if detail_page.learning_content_heading2 %}
+                    <div class="course-content-block">
+                        <strong class="content-number">
+                            2
+                        </strong>
+                        <div>
+                            <h2 class="content-name">
+                                {{detail_page.learning_content_heading2}}
+                            </h2>
+                            <p class="content-description">
+                                {{detail_page.learning_content_detail2}}
+                            </p>
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if detail_page.learning_content_heading3 %}
+                    <div class="course-content-block">
+                        <strong class="content-number">
+                            3
+                        </strong>
+                        <div>
+                            <h2 class="content-name">
+                                {{detail_page.learning_content_heading3}}
+                            </h2>
+                            <p class="content-description">
+                                {{detail_page.learning_content_detail3}}
+                            </p>
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if detail_page.learning_content_heading4 %}
+                    <div class="course-content-block">
+                        <strong class="content-number">
+                            4
+                        </strong>
+                        <div>
+                            <h2 class="content-name">
+                                {{detail_page.learning_content_heading4}}
+                            </h2>
+                            <p class="content-description">
+                                {{detail_page.learning_content_detail4}}
+                            </p>
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if detail_page.learning_content_heading5 %}
+                    <div class="course-content-block">
+                        <strong class="content-number">
+                            5
+                        </strong>
+                        <div>
+                            <h2 class="content-name">
+                                {{detail_page.learning_content_heading5}}
+                            </h2>
+                            <p class="content-description">
+                                {{detail_page.learning_content_detail5}}
+                            </p>
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if detail_page.learning_content_heading6 %}
+                    <div class="course-content-block">
+                        <strong class="content-number">
+                            6
+                        </strong>
+                        <div>
+                            <h2 class="content-name">
+                                {{detail_page.learning_content_heading6}}
+                            </h2>
+                            <p class="content-description">
+                                {{detail_page.learning_content_detail6}}
+                            </p>
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if detail_page.learning_content_heading7 %}
+                    <div class="course-content-block">
+                        <strong class="content-number">
+                            7
+                        </strong>
+                        <div>
+                            <h2 class="content-name">
+                                {{detail_page.learning_content_heading7}}
+                            </h2>
+                            <p class="content-description">
+                                {{detail_page.learning_content_detail7}}
+                            </p>
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if detail_page.learning_content_heading8 %}
+                    <div class="course-content-block">
+                        <strong class="content-number">
+                            8
+                        </strong>
+                        <div>
+                            <h2 class="content-name">
+                                {{detail_page.learning_content_heading8}}
+                            </h2>
+                            <p class="content-description">
+                                {{detail_page.learning_content_detail8}}
+                            </p>
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if detail_page.learning_content_heading9 %}
+                    <div class="course-content-block">
+                        <strong class="content-number">
+                            9
+                        </strong>
+                        <div>
+                            <h2 class="content-name">
+                                {{detail_page.learning_content_heading9}}
+                            </h2>
+                            <p class="content-description">
+                                {{detail_page.learning_content_detail9}}
+                            </p>
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if detail_page.learning_content_heading10 %}
+                    <div class="course-content-block">
+                        <strong class="content-number">
+                            10
+                        </strong>
+                        <div>
+                            <h2 class="content-name">
+                                {{detail_page.learning_content_heading10}}
+                            </h2>
+                            <p class="content-description">
+                                {{detail_page.learning_content_detail10}}
+                            </p>
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if detail_page.learning_content_heading11 %}
+                    <div class="course-content-block">
+                        <strong class="content-number">
+                            11
+                        </strong>
+                        <div>
+                            <h2 class="content-name">
+                                {{detail_page.learning_content_heading11}}
+                            </h2>
+                            <p class="content-description">
+                                {{detail_page.learning_content_detail11}}
+                            </p>
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if detail_page.learning_content_heading12 %}
+                    <div class="course-content-block">
+                        <strong class="content-number">
+                            12
+                        </strong>
+                        <div>
+                            <h2 class="content-name">
+                                {{detail_page.learning_content_heading12}}
+                            </h2>
+                            <p class="content-description">
+                                {{detail_page.learning_content_detail12}}
+                            </p>
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if detail_page.learning_content_heading13 %}
+                    <div class="course-content-block">
+                        <strong class="content-number">
+                            13
+                        </strong>
+                        <div>
+                            <h2 class="content-name">
+                                {{detail_page.learning_content_heading13}}
+                            </h2>
+                            <p class="content-description">
+                                {{detail_page.learning_content_detail13}}
+                            </p>
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if detail_page.learning_content_heading14 %}
+                    <div class="course-content-block">
+                        <strong class="content-number">
+                            14
+                        </strong>
+                        <div>
+                            <h2 class="content-name">
+                                {{detail_page.learning_content_heading14}}
+                            </h2>
+                            <p class="content-description">
+                                {{detail_page.learning_content_detail14}}
+                            </p>
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if detail_page.learning_content_heading15 %}
+                    <div class="course-content-block">
+                        <strong class="content-number">
+                            15
+                        </strong>
+                        <div>
+                            <h2 class="content-name">
+                                {{detail_page.learning_content_heading15}}
+                            </h2>
+                            <p class="content-description">
+                                {{detail_page.learning_content_detail15}}
+                            </p>
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if detail_page.learning_content_heading16 %}
+                    <div class="course-content-block">
+                        <strong class="content-number">
+                            16
+                        </strong>
+                        <div>
+                            <h2 class="content-name">
+                                {{detail_page.learning_content_heading16}}
+                            </h2>
+                            <p class="content-description">
+                                {{detail_page.learning_content_detail16}}
+                            </p>
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if detail_page.learning_content_heading17 %}
+                    <div class="course-content-block">
+                        <strong class="content-number">
+                            17
+                        </strong>
+                        <div>
+                            <h2 class="content-name">
+                                {{detail_page.learning_content_heading17}}
+                            </h2>
+                            <p class="content-description">
+                                {{detail_page.learning_content_detail17}}
+                            </p>
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if detail_page.learning_content_heading18 %}
+                    <div class="course-content-block">
+                        <strong class="content-number">
+                            18
+                        </strong>
+                        <div>
+                            <h2 class="content-name">
+                                {{detail_page.learning_content_heading18}}
+                            </h2>
+                            <p class="content-description">
+                                {{detail_page.learning_content_detail18}}
+                            </p>
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if detail_page.learning_content_heading19 %}
+                    <div class="course-content-block">
+                        <strong class="content-number">
+                            19
+                        </strong>
+                        <div>
+                            <h2 class="content-name">
+                                {{detail_page.learning_content_heading19}}
+                            </h2>
+                            <p class="content-description">
+                                {{detail_page.learning_content_detail19}}
+                            </p>
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if detail_page.learning_content_heading20 %}
+                    <div class="course-content-block">
+                        <strong class="content-number">
+                            20
+                        </strong>
+                        <div>
+                            <h2 class="content-name">
+                                {{detail_page.learning_content_heading20}}
+                            </h2>
+                            <p class="content-description">
+                                {{detail_page.learning_content_detail20}}
+                            </p>
+                        </div>
+                    </div>
+                {% endif %}
+
+
+
+
+                    <div class="load-more-btn">
+                        <h3 class="load-more-heading">
+                            Load More
+                        </h3>
+                    </div>
+
+                    <div class="see-less-btn">
+                        <h3>
+                            See Less
+                        </h3>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="payment-section">
+        <div class="payment-div">
+            <div class="payment-text-div">
+                <h2 class="payment-text">
+                    You can Pay us via
+                </h2>
+            </div>
+            <div class="payment-logos-div">
+
+            </div>
+        </div>
+    </section>
+
+    <section class="my-course-section">
+        <div class="my-course-section-container container">
+            <h1 class="my-course-section-heading">
+                OUR BEST COURSE
+            </h1>
+        </div>
+
+
+        <div class="flex-carousel">
+            <div class="flex-container">
+                <div class="color-column-container">
+                    <div class="col-heading-div">
+                        <h2 class="col-heading">
+                            Courses
+                        </h2>
+                    </div>
+                    <div class="col-text-div">
+                        <p class="col-text">
+                            Preparation To learn Data Analysis By Understanding how and Why it Used
+                        </p>
+                    </div>
+                    <div class="col-arrow-div">
+                        <img src="../Images/Icons/arrow-left.png" alt="" class="arrow-left">
+                        <img src="../Images/Icons/arrow-right.png" alt="">
+                    </div>
+                </div>
+
+                <div class="flex-items-container">
+                    <div class="flex-item">
+                        <div class="course-container">
+                            <a href="#">
+                                <div class="course-img-div">
+                                    <img src="../Images/Home/1.jpg" alt="">
+                                </div>
+
+                                <div class="course-title-div">
+                                    <h2 class="course-title">
+                                        Contain Demo
+                                    </h2>
+                                </div>
+
+                                <div class="course-text-div">
+                                    <p class="course-text">
+                                        Preparation To learn Data Analysis By Understanding how and Why it Used
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex-item">
+                        <div class="course-container">
+                            <a href="#">
+                                <div class="course-img-div">
+                                    <img src="../Images/Home/1.jpg" alt="">
+                                </div>
+
+                                <div class="course-title-div">
+                                    <h2 class="course-title">
+                                        Contain Demo
+                                    </h2>
+                                </div>
+
+                                <div class="course-text-div">
+                                    <p class="course-text">
+                                        Preparation To learn Data Analysis By Understanding how and Why it Used
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex-item">
+                        <div class="course-container">
+                            <a href="#">
+                                <div class="course-img-div">
+                                    <img src="../Images/Home/1.jpg" alt="">
+                                </div>
+
+                                <div class="course-title-div">
+                                    <h2 class="course-title">
+                                        Contain Demo
+                                    </h2>
+                                </div>
+
+                                <div class="course-text-div">
+                                    <p class="course-text">
+                                        Preparation To learn Data Analysis By Understanding how and Why it Used
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex-item">
+                        <div class="course-container">
+                            <a href="#">
+                                <div class="course-img-div">
+                                    <img src="../Images/Home/1.jpg" alt="">
+                                </div>
+
+                                <div class="course-title-div">
+                                    <h2 class="course-title">
+                                        Contain Demo
+                                    </h2>
+                                </div>
+
+                                <div class="course-text-div">
+                                    <p class="course-text">
+                                        Preparation To learn Data Analysis By Understanding how and Why it Used
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex-item">
+                        <div class="course-container">
+                            <a href="#">
+                                <div class="course-img-div">
+                                    <img src="../Images/Home/1.jpg" alt="">
+                                </div>
+
+                                <div class="course-title-div">
+                                    <h2 class="course-title">
+                                        Contain Demo
+                                    </h2>
+                                </div>
+
+                                <div class="course-text-div">
+                                    <p class="course-text">
+                                        Preparation To learn Data Analysis By Understanding how and Why it Used
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex-item">
+                        <div class="course-container">
+                            <a href="#">
+                                <div class="course-img-div">
+                                    <img src="../Images/Home/1.jpg" alt="">
+                                </div>
+
+                                <div class="course-title-div">
+                                    <h2 class="course-title">
+                                        Contain Demo
+                                    </h2>
+                                </div>
+
+                                <div class="course-text-div">
+                                    <p class="course-text">
+                                        Preparation To learn Data Analysis By Understanding how and Why it Used
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <section class="quote-section">
+        <div class="container quote-container">
+            <span>&ldquo;</span>
+            <h1 class="quote">
+                {{detail_page.qoute}}
+            </h1><span>&rdquo;</span>
+
+            <div class="quote-author">
+                <h2>{{detail_page.quote_author}}</h2>
+                <p>Team Leader, Codeit</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="instructor-section">
+        <div class="container">
+            <h1 class="instructor-heading">
+                Your Teachers In This Course
+            </h1>
+
+            <div class="row instructor-row">
+                <div class="row instructor-row">
+                    {% for author in detail_page.author.all %}
+                        <div class="col span-1-of-3">
+                            <a href="{% url 'instructor-detail' author.id %}" target="_blank">
+                                <div class="instructor1">
+                                    <div class="row">
+                                        <div class="col span-4-of-12 instructor-image-column">
+                                            <div class="instructor-image">
+                                                <img src="{{author.profile.url}}"
+                                                    alt="" height="120pt" width="120pt" style="border-radius: 50%;">
+                                            </div>
+                                        </div>
+                                        <div class="col span-8-of-12">
+                                            <div class="instructor-name">
+                                                <h1>
+                                                    {{author.name}}
+                                                </h1>
+                                            </div>
+                                            <div class="instructor-category">
+                                                <strong>{{author.teaching_skill}}</strong>
+                                            </div>
+                                            <div class="instructor-about">
+                                                <p>
+                                                    {{author.short_description}}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-to-section">
+        <div class="container how-to-section-container">
+            <div class="how-to-section-content-container">
+                <div class="how-to-section-row row">
+                    <div class="col span-1-of-2 color-column">
+                        <h1 class="color-column-text">
+                            Don't Know What to Do Here is the Enrollment Procedure
+                        </h1>
+                    </div>
+                    <div class="col span-1-of-2 steps-column">
+                        <div class="steps-column-container">
+                            <div class="step-container">
+                                <div class="step step1">
+                                    <div class="step-number">
+                                        <strong>1</strong>
+                                        <strong>Step</strong>
+                                    </div>
+
+                                    <div class="step-text">
+                                        <h2 class="step-heading">
+                                            Got a helpful Roadmap
+                                        </h2>
+                                        <p class="step-para">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse
+                                            ultrices gravida.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="step step2">
+                                    <div class="step-number">
+                                        <strong>2</strong>
+                                        <strong>Step</strong>
+                                    </div>
+
+                                    <div class="step-text">
+                                        <h2 class="step-heading">
+                                            Got a helpful Roadmap
+                                        </h2>
+                                        <p class="step-para">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse
+                                            ultrices gravida.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="step step3">
+                                    <div class="step-number">
+                                        <strong>3</strong>
+                                        <strong>Step</strong>
+                                    </div>
+
+                                    <div class="step-text">
+                                        <h2 class="step-heading">
+                                            Got a helpful Roadmap
+                                        </h2>
+                                        <p class="step-para">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse
+                                            ultrices gravida.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <h1>Frequently Asked Questions(FAQs)</h1>
+
+            <div class="accordion">
+
+            {% if detail_page.Faq_Question %}
+
+                <div class="accordion-item">
+                    <div class="accordion-item-header">
+                    {{detail_page.Faq_Question}}
+                </div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">
+                        {{detail_page.Faq_Answer}}
+                    </div>
+                </div>
+                </div>
+
+            {% endif %}
+
+            {% if detail_page.Faq_Question2 %}
+
+                <div class="accordion-item">
+                    <div class="accordion-item-header">
+                    {{detail_page.Faq_Question2}}
+                </div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">
+                        {{detail_page.Faq_Answer2}}
+                    </div>
+                </div>
+                </div>
+
+            {% endif %}
+
+            {% if detail_page.Faq_Question3 %}
+
+                <div class="accordion-item">
+                    <div class="accordion-item-header">
+                    {{detail_page.Faq_Question3}}
+                </div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">
+                        {{detail_page.Faq_Answer3}}
+                    </div>
+                </div>
+                </div>
+
+            {% endif %}
+
+            {% if detail_page.Faq_Question4 %}
+
+                <div class="accordion-item">
+                    <div class="accordion-item-header">
+                    {{detail_page.Faq_Question4}}
+                </div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">
+                        {{detail_page.Faq_Answer4}}
+                    </div>
+                </div>
+                </div>
+
+            {% endif %}
+
+            {% if detail_page.Faq_Question5 %}
+
+                <div class="accordion-item">
+                    <div class="accordion-item-header">
+                    {{detail_page.Faq_Question5}}
+                </div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">
+                        {{detail_page.Faq_Answer5}}
+                    </div>
+                </div>
+                </div>
+
+            {% endif %}
+
+            {% if detail_page.Faq_Question6 %}
+
+                <div class="accordion-item">
+                    <div class="accordion-item-header">
+                    {{detail_page.Faq_Question6}}
+                </div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">
+                        {{detail_page.Faq_Answer6}}
+                    </div>
+                </div>
+                </div>
+
+            {% endif %}
+
+            {% if detail_page.Faq_Question7 %}
+
+                <div class="accordion-item">
+                    <div class="accordion-item-header">
+                    {{detail_page.Faq_Question7}}
+                </div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">
+                        {{detail_page.Faq_Answer7}}
+                    </div>
+                </div>
+                </div>
+
+            {% endif %}
+
+            {% if detail_page.Faq_Question8 %}
+
+                <div class="accordion-item">
+                    <div class="accordion-item-header">
+                    {{detail_page.Faq_Question8}}
+                </div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">
+                        {{detail_page.Faq_Answer8}}
+                    </div>
+                </div>
+                </div>
+
+            {% endif %}
+
+            {% if detail_page.Faq_Question9 %}
+
+                <div class="accordion-item">
+                    <div class="accordion-item-header">
+                    {{detail_page.Faq_Question9}}
+                </div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">
+                        {{detail_page.Faq_Answer9}}
+                    </div>
+                </div>
+                </div>
+
+            {% endif %}
+
+            {% if detail_page.Faq_Question10 %}
+
+                <div class="accordion-item">
+                    <div class="accordion-item-header">
+                    {{detail_page.Faq_Question10}}
+                </div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">
+                        {{detail_page.Faq_Answer10}}
+                    </div>
+                </div>
+                </div>
+
+            {% endif %}
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section Ends Here -->
+
+
+
+    <!-- Footer Starts Here -->
+    <footer class="page-footer">
+        <div class="container page-footer__container">
+            <div class="copyright-text-div">
+                <strong class="copyright-text">
+                    &copy;2016-2020 TutorialPoints Company
+                </strong>
+            </div>
+            <div class="footer-links-div">
+                <ul class="footer-list">
+                    <li class="footer-item"><a href="#" class="footer-link">Facebook .</a></li>
+                    <li class="footer-item"><a href="#" class="footer-link">Twitter .</a></li>
+                    <li class="footer-item"><a href="#" class="footer-link">Linkdin</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Ends Here -->
+
+    <script src="/static/js/navbar.js?{% now "U" %}"></script>
+    <script src="/static/js/courses.js?{% now "U" %}"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+        <script>
+            var activator = document.querySelector(".submenu-activator")
+            var smallNav = document.querySelector(".profile-submenu-hidden")
+
+            activator.addEventListener("click", ()=> {
+                smallNav.classList.toggle("sub-hidden")
+            })
+        </script>
+
+ {% endblock content %}

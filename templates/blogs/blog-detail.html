@@ -1,0 +1,175 @@
+{% include 'important/base.html' %}
+{% block content %}
+{% load static %}
+{% load hitcount_tags %}
+
+
+    <!-- Section Starts Here -->
+            <div class="header-section">
+                <div class="container header-section-container">
+                    <div class="back-link-div">
+                        
+                    </div>
+
+                    <div class="header-heading-div">
+                        <h1 class="header-heading">
+                            Our Blog
+                        </h1>
+                    </div>
+
+                    <div class="header-para-div">
+                        <p class="header-para">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, sapiente, animi sint expedita neque veritatis quidem rem quod magni architecto cum earum quia molestiae enim.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <section class="blog-hero-section">
+                <div class="container blog-hero-container">
+                    <div class="date-and-category">
+                        {% for cat in detail.categories.all %}
+                            <a href="{% url 'cate-page' cat.id %}" class="category-link">{{ cat.title }}</a>
+                        {% endfor %}
+
+                        <div class="detail-date-and-views">
+                            <p class="date">{{detail.formatedDate}}</p>
+                            <strong class="views-count">
+                                <i class="fas fa-eye"></i> {% get_hit_count for detail %}
+                            </strong>
+                        </div>
+                    </div>
+
+                    <div class="main-heading-div">
+                        <h1 class="main-heading">
+                            {{detail.title}}
+                        </h1>
+                    </div>
+
+                    <div class="share-links-container">
+                        <div class="share-text">
+                            <p>
+                                Share With :
+                            </p>
+                        </div>
+                        <div class="share-icons">
+                            <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#">
+                            <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                            <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <img src="{{detail.main_photo.url}}" alt="">
+                </div>
+            </section>
+
+            <section class="blog-detail-section">
+                <div class="container blog-detail-section-container">
+                    <div class="row">
+                        <div class="col span-8-of-12 text-side">
+                            <div class="text-side-div">
+                                <p class="hero-blog-detail">
+                                    {{detail.content | safe }}
+                                </p>
+                            </div>
+
+                            <div class="detail-share-div">
+                                <div class="detail-share-container">
+                                    <div class="detail-share">
+                                        <a href="#" class="pinterest">
+                                            <i class="fab fa-pinterest-p"></i>
+                                        </a>
+                                    </div>
+
+                                    <div class="detail-share">
+                                        <a href="#" class="facebook">
+                                        <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </div>
+
+                                    <div class="detail-share">
+                                        <a href="#" class="twitter">
+                                        <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </div>
+
+                                    <div class="detail-share">
+                                        <a href="#" class="linkedin">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col span-4-of-12 featured-side">
+                            <div class="featured-side-container">
+                                <div class="featured-heading-div">
+                                    <h2 class="featured-heading">
+                                        Recent Articles
+                                    </h2>
+                                </div>
+
+                                <div class="articles-container">
+
+                                {% for recent in recent_posts %}
+                                    <div class="article">
+                                        <a href="#">
+                                            <div class="article-img">
+                                                <img src="{{recent.photo.url}}" alt="">
+                                            </div>
+                                            <div class="article-about">
+                                                <div class="article-title-div">
+                                                    <h2 class="article-title">
+                                                        {{recent.title}}
+                                                    </h2>
+                                                </div>
+                                                <div class="article-date-div">
+                                                    <strong class="article-date">
+                                                        {{recent.formatedDate}}
+                                                    </strong>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                {% endfor %}
+
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    <!-- Section Ends Here -->
+
+
+
+    <!-- Footer Starts Here -->
+    <footer class="page-footer">
+        <div class="container page-footer__container">
+            <div class="copyright-text-div">
+                <strong class="copyright-text">
+                    &copy;2016-2020 TutorialPoints Company
+                </strong>
+            </div>
+            <div class="footer-links-div">
+                <ul class="footer-list">
+                    <li class="footer-item"><a href="#" class="footer-link">Facebook .</a></li>
+                    <li class="footer-item"><a href="#" class="footer-link">Twitter .</a></li>
+                    <li class="footer-item"><a href="#" class="footer-link">Linkdin</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Ends Here -->
+    <script src="{% static '/js/navbar.js' %}"></script>
+
+ {% endblock content %}

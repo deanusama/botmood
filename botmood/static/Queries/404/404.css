@@ -1,0 +1,9 @@
+@media only screen and (max-width: 450px) {
+  .only-section .container .main-content .error-div img {
+    width: 15rem;
+  }
+  .only-section .container .main-content .text-div .text {
+    font-size: 2.6rem !important;
+  }
+}
+/*# sourceMappingURL=404.css.map */

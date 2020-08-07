@@ -1,0 +1,196 @@
+/*********** Variables *************/
+/*********** Universal Styling *************/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+}
+
+/*********** Basic Styling *************/
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1410px;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url(../Fonts/ProximaNova-Extrabold.otf);
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url(../Fonts/ProximaNova-Bold.otf);
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url(../Fonts/ProximaNova-Regular.otf);
+  font-style: normal;
+  font-weight: 400;
+}
+
+/*********** Main Section *************/
+.main-section {
+  position: relative;
+}
+
+.main-section img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 45%;
+  height: 100%;
+}
+
+.main-section .main-section-container .row {
+  height: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-section .main-section-container .row .text-column {
+  padding: 3.125rem 0;
+  margin: 0;
+}
+
+.main-section .main-section-container .row .text-column .back-link-div h2 .back-link {
+  font-size: 2rem;
+  font-family: "ProximaNova";
+  font-weight: 700;
+  color: white;
+}
+
+.main-section .main-section-container .row .text-column .heading-div .heading {
+  margin: 3.3125rem 0;
+  font-size: 3.75rem;
+  font-family: "ProximaNova";
+  font-weight: 900;
+  color: white;
+}
+
+.main-section .main-section-container .row .text-column .paragraph-div .paragraph {
+  font-family: "ProximaNova";
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 2.5rem;
+  color: white;
+  word-spacing: 0.25rem;
+}
+
+.main-section .main-section-container .row .form-column {
+  padding: 3.125rem 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.main-section .main-section-container .row .form-column .login {
+  margin-left: auto;
+  width: 37.5rem;
+  height: 500px;
+}
+
+.main-section .main-section-container .row .form-column .login .login-heading {
+  margin-bottom: 3.125rem;
+  font-size: 2rem;
+  font-family: "ProximaNova";
+  font-weight: 900;
+}
+
+.main-section .main-section-container .row .form-column .login .form-div {
+  margin-bottom: 6.18rem;
+}
+
+.main-section .main-section-container .row .form-column .login .form-div .form-group {
+  margin-bottom: 2.31rem;
+}
+
+.main-section .main-section-container .row .form-column .login .form-div .form-group label {
+  font-family: "ProximaNova";
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin-bottom: 1.81rem;
+  display: block;
+}
+
+.main-section .main-section-container .row .form-column .login .form-div .form-group input {
+  height: 2.68rem;
+  width: 100%;
+  border: 1px solid #e1e1e1;
+  background: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.main-section .main-section-container .row .form-column .login .form-div .form-btn {
+  background-color: #20f384;
+  font-size: 1.125rem;
+  font-family: "ProximaNova";
+  font-weight: 700;
+  height: 3.625rem;
+  width: 12.875rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.main-section .main-section-container .row .form-column .login .form-div .links-group .forget-link {
+  text-decoration: underline;
+  color: black;
+  margin-left: 2.3rem;
+  font-size: 1.125rem;
+  margin-bottom: 3.125rem;
+  font-family: "ProximaNova";
+  font-weight: 400;
+}
+
+.main-section .main-section-container .row .form-column .login .form-div .links-group .forget-link:hover {
+  text-decoration: none;
+}
+
+.main-section .main-section-container .row .form-column .login .other-login-div {
+  margin-bottom: 3rem;
+}
+
+.main-section .main-section-container .row .form-column .login .other-login-div__heading h2 {
+  margin-bottom: 2rem;
+  font-size: 1.125rem;
+  font-family: "ProximaNova";
+  font-weight: 700;
+  color: #171426;
+}
+
+.main-section .main-section-container .row .form-column .login .other-login-div__icons i {
+  font-size: 4.81rem;
+  margin-right: 1rem;
+  color: #171246;
+}
+
+.main-section .main-section-container .row .form-column .login .already-member-text {
+  color: black;
+  font-size: 1.125rem;
+  font-family: "ProximaNova";
+  font-weight: 700;
+}
+
+.main-section .main-section-container .row .form-column .login .already-member-text a {
+  color: #ff9d68;
+}
+/*# sourceMappingURL=login.css.map */

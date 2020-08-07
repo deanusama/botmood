@@ -1,0 +1,131 @@
+/*********** Variables *************/
+// Color Variables
+$link-color: black;
+
+
+
+
+
+/*********** Universal Styling *************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*********** Basic Styling *************/
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1410px;
+}
+
+@font-face {
+    font-family: "ProximaNova";
+    src: url(../Fonts/ProximaNova-Extrabold.otf);
+    font-style: normal;
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "ProximaNova";
+    src: url(../Fonts/ProximaNova-Bold.otf);
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "ProximaNova";
+    src: url(../Fonts/ProximaNova-Regular.otf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+/*********** Main Section *************/
+.only-section{
+    height: 100vh;
+    background-image:linear-gradient(to right top, #ee2f4fcb, #f3cd34c7), url(../../Images/404/hd-bachi.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 3.31rem;
+    .container{
+        .backlink-div{
+            .back-link{
+                color: white;
+                font-family: ProximaNova;
+                font-weight: 700;
+                font-size: 2rem;
+            }
+        }
+
+        .main-content{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            .error-div{
+                margin-bottom: 4.43rem;
+                img{
+                    width: 20rem;
+                }
+            }
+
+            .text-div{
+                margin-bottom: 4.875rem;
+                .text{
+                    font-family: ProximaNova;
+                    font-size: 3.75rem;
+                    font-weight: 900;
+                    color: white;
+                }
+            }
+
+            .btn-div{
+                margin-bottom: 10.31rem;
+                .btn-link{
+                    display: block;
+                    background-color: #20f384;
+                    font-family: ProximaNova;
+                    font-weight: 700;
+                    font-size: 1.125rem;
+                    color: black;
+                    padding: 1.1875rem 5.125rem;
+                    border-radius: 5px;
+                }
+            }
+
+        }
+    }
+}
+
+// Media Query
+
+@media only screen and(max-width: 1500px){
+   html{
+       font-size: 14px;
+   }
+}
+
+@media only screen and(max-width: 1300px){
+    html{
+        font-size: 13px;
+    }
+ }
+
+ @media only screen and(max-width: 1195px){
+    html{
+        font-size: 12px;
+    }
+ }

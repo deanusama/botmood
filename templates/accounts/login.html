@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <script src="https://kit.fontawesome.com/bd33e4cb7c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/Css/Login/login.css?{% now "U" %}">
+    <link rel="stylesheet" href="/static/Css/General/Grid.css?{% now "U" %}">
+    <link rel="stylesheet" href="/static/Css/General/general.css?{% now "U" %}">
+    <link rel="stylesheet" href="/static/Queries/general/general.css?{% now "U" %}">
+    <link rel="stylesheet" href="/static/Queries/login/login.css?{% now "U" %}">
+</head>
+
+<body>
+
+
+
+
+    <!-- Section Starts Here -->
+            <section class="main-section">
+                <img src="{% static '/Images/Login/an-abstract-design-2881261.jpg' %}" alt="">
+                <div class="container main-section-container">
+                    <div class="row">
+                        <div class="col span-5-of-12 text-column">
+                            <div class="back-link-div">
+                                <h2>
+                                    <a href="#" class="back-link">Back</a>
+                                </h2>
+                            </div>
+
+                            <div class="heading-div">
+                                <h1 class="heading">Login</h1>
+                            </div>
+
+                            <div class="paragraph-div">
+                                <p class="paragraph">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum laboriosam adipisci assumenda. Modi, assumenda iusto aliquam esse facere nobis voluptate exercitationem, harum, quis tenetur cum.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col span-7-of-12 form-column">
+                            <div class="login">
+                                <div class="login-heading">
+                                    <h1>
+                                        Login
+                                    </h1>
+                                </div>
+
+                                <div class="form-div">
+
+                                    <form action="" method="POST">
+                                    {% csrf_token %}
+                                        <div class="form-group">
+                                            <label for="Name">Email or Username</label>
+                                            <input type="text" id="Name" name="username" required name="Email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="password">Password</label>
+                                            <input type="password" id="password" name="password" required name="Email">
+                                        </div>
+                                        <div class="links-group">
+                                            <button type="submit" class="form-btn">
+                                                Login
+                                            </button>
+                                            <a href="{% url 'reset_password' %}" class="forget-link">Forget Your Password ?</a>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="other-login-div">
+                                    <div class="other-login-div__heading">
+                                        <h2>
+                                            Login With Other Account
+                                        </h2>
+                                    </div>
+                                    <div class="other-login-div__icons">
+                                        <a href="#">
+                                        <i class="fab fa-facebook-square"></i>
+                                        </a>
+                                        <a href="#">
+                                        <i class="fab fa-twitter-square"></i>
+                                        </a>
+                                        <a href="#">
+                                        <i class="fab fa-github-square"></i>
+                                        </a>
+                                        <a href="#">
+                                        <i class="fab fa-linkedin"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="already-member">
+                                    <strong class="already-member-text">
+                                        Already have an Account? <a href="{% url 'signup' %}">Sign Up</a>
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    <!-- Section Ends Here -->
+
+
+
+    <!-- Footer Ends Here -->
+    <script src="/static/js/navbar.js?{% now "U" %}"></script>
+
+</body>
+
+</html>

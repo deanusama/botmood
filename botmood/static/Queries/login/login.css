@@ -1,0 +1,87 @@
+@media only screen and (max-width: 1400px) {
+  .container {
+    width: 100%;
+    padding: 0 2%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .main-section .row {
+    height: 1000px;
+  }
+  .main-section img {
+    display: none;
+  }
+  .main-section .text-column {
+    display: none;
+  }
+  .main-section .form-column {
+    width: 100%;
+  }
+  .main-section .form-column .login {
+    width: 60% !important;
+    margin: 0 auto;
+  }
+  .main-section .form-column .login .links-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main-section .form-column .login .links-group .form-btn {
+    margin-bottom: 2rem;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    margin-right: 1rem;
+  }
+  .main-section .form-column .login .links-group .forget-link {
+    margin-left: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .main-section .form-column {
+    width: 100%;
+  }
+  .main-section .form-column .login {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+  .main-section .form-column .login .links-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main-section .form-column .login .links-group .form-btn {
+    margin-bottom: 2rem;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    margin-right: 1rem;
+  }
+  .main-section .form-column .login .links-group .forget-link {
+    margin-left: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 90% !important;
+  }
+  .other-login-div__icons i {
+    font-size: 4rem !important;
+    margin-right: 1rem;
+    color: #171246;
+  }
+}
+/*# sourceMappingURL=login.css.map */

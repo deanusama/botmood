@@ -1,0 +1,107 @@
+/*********** Variables *************/
+/*********** Universal Styling *************/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*********** Basic Styling *************/
+@font-face {
+  font-family: "ProximaNova";
+  src: url(../Fonts/ProximaNova-Extrabold.otf);
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url(../Fonts/ProximaNova-Bold.otf);
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url(../Fonts/ProximaNova-Regular.otf);
+  font-style: normal;
+  font-weight: 400;
+}
+
+/*********** Main Section *************/
+.header-section {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../Images/Blog-List/2-women.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../Images/Blog-List/2-women.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 3.5rem 0 5rem 0;
+}
+
+.header-section .back-link-div {
+  margin-bottom: 2.3rem;
+}
+
+.header-section .back-link-div .back-link {
+  font-size: 2rem;
+  font-family: ProximaNova;
+  font-weight: 700;
+  color: white;
+}
+
+.header-section .header-heading-div {
+  margin-bottom: 2.3rem;
+}
+
+.header-section .header-heading-div .header-heading {
+  font-family: ProximaNova;
+  font-weight: 900;
+  font-size: 3.75rem;
+  color: white;
+}
+
+.header-section .header-para-div .header-para {
+  font-family: ProximaNova;
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: white;
+  width: 75%;
+  line-height: 2rem;
+}
+
+.terms-and-condition {
+  padding: 5rem 0;
+}
+
+.terms-and-condition .container .heading {
+  margin-bottom: 5rem;
+  text-align: center;
+  font-family: "ProximaNova";
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.terms-and-condition .container .text {
+  margin: 0 auto;
+  width: 85%;
+  max-width: 930px;
+  text-align: left;
+  font-family: "ProximaNova";
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: #999999;
+  line-height: 1.8rem;
+  word-spacing: 0.1rem;
+}
+/*# sourceMappingURL=terms.css.map */

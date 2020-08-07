@@ -1,0 +1,19 @@
+@media only screen and(max-width: 450px){
+    .only-section{
+        .container{
+            .main-content{
+                .error-div{
+                    img{
+                        width: 15rem;
+                    }
+                }
+
+                .text-div{
+                    .text{
+                        font-size: 2.6rem !important;
+                    }
+                }
+            }
+        }
+    }
+}

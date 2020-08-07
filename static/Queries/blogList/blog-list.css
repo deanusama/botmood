@@ -1,0 +1,98 @@
+@media only screen and (max-width: 1500px) {
+  .buttons-section-row {
+    padding: 4rem 0% 2rem 10%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  .buttons-section-row .button-section-div {
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .container {
+    width: 100%;
+    padding: 0 2%;
+  }
+  .container .blog-container {
+    padding: 0 1rem !important;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .buttons-section-row {
+    padding: 4rem 0% 2rem 3%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  .buttons-section-row .button-section-div {
+    margin-bottom: 2rem;
+  }
+  .blog-section-container .row .blog-container {
+    width: 49%;
+  }
+  .blog-section-container .row .blog-container .zero-image {
+    height: 600px !important;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .blog-section-container .row .blog-container {
+    width: 49%;
+  }
+  .blog-section-container .row .blog-container .blog {
+    min-height: 550px !important;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .blog-section-container .row .blog-container {
+    margin-left: 0;
+    margin-bottom: 3rem;
+    width: 100%;
+  }
+  .blog-section-container .row .blog-container .blog-detail {
+    min-height: 20rem !important;
+  }
+  .blog-section-container .row .blog-container img {
+    max-height: 500px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .zero-image {
+    height: 500px !important;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .buttons-section-row {
+    padding: 4rem 0% 2rem 0%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .buttons-section-row .button-section-div {
+    margin-bottom: 2rem;
+    margin-right: 0;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    padding: 0 2%;
+  }
+  .buttons-section-row .button-section-div .button-section {
+    width: 100%;
+  }
+  .buttons-section-row .button-section-div .button-section .btn-link {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 90%;
+  }
+}
+/*# sourceMappingURL=blog-list.css.map */

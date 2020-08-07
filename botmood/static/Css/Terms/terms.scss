@@ -1,0 +1,117 @@
+/*********** Variables *************/
+// Color Variables
+$link-color: black;
+
+
+
+
+
+/*********** Universal Styling *************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*********** Basic Styling *************/
+@font-face {
+    font-family: "ProximaNova";
+    src: url(../Fonts/ProximaNova-Extrabold.otf);
+    font-style: normal;
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "ProximaNova";
+    src: url(../Fonts/ProximaNova-Bold.otf);
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "ProximaNova";
+    src: url(../Fonts/ProximaNova-Regular.otf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+/*********** Main Section *************/
+
+.header-section {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../Images/Blog-List/2-women.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 3.5rem 0 5rem 0;
+
+    .back-link-div {
+        margin-bottom: 2.3rem;
+
+        .back-link {
+            font-size: 2rem;
+            font-family: ProximaNova;
+            font-weight: 700;
+            color: white;
+        }
+    }
+
+    .header-heading-div {
+        margin-bottom: 2.3rem;
+
+        .header-heading {
+            font-family: ProximaNova;
+            font-weight: 900;
+            font-size: 3.75rem;
+            color: white;
+        }
+    }
+
+    .header-para-div {
+        .header-para {
+            font-family: ProximaNova;
+            font-weight: 400;
+            font-size: 1.125rem;
+            color: white;
+            width: 75%;
+            line-height: 2rem;
+        }
+    }
+
+}
+
+.terms-and-condition{
+    padding: 5rem 0;
+    .container{
+        .heading{
+            margin-bottom: 5rem;
+            text-align: center;
+            font-family: "ProximaNova";
+            font-weight: 900;
+            font-size: 3rem;
+        }
+
+        .text{
+            margin: 0 auto;
+            width: 85%;
+            max-width: 930px;
+            text-align: left;
+            font-family: "ProximaNova";
+            font-weight: 400;
+            font-size: 1.125rem;
+            color: #999999;
+            line-height: 1.8rem;
+            word-spacing: 0.1rem;
+        }
+    }
+}
