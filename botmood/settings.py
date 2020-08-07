@@ -1,3 +1,4 @@
+import django-heroku
 import os
 import environ
 
@@ -142,3 +143,5 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'deanusama@gmail.com'
 EMAIL_HOST_PASSWORD = 'dean@info.USAMA'
+
+django_heroku.settings(locals())
